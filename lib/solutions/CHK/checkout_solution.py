@@ -54,7 +54,7 @@ class Basket:
         return sum([self.prices[sku] * self.items[sku] for sku in self.items])
 
 class OfferManager:
-    def apply(basket_og: Basket, offers: List[Offer]) -> Basket:
+    def apply(basket: Basket, offers: List[Offer]) -> Basket:
         """
         Apply offers and return new basket.
         """
@@ -63,26 +63,24 @@ class OfferManager:
 
         offers_applicable = []
         for offer in offers:
-            if basket_og.contains(offer.base_items):
+            if basket.contains(offer.base_items):
                 offers_applicable.append(offer)
 
         if not offers_applicable:
-            return basket_og
+            return basket
 
-        for offer_list in permutations(offers_applicable):
-            #print(f'testing offer list {offer_list}')
-            basket = copy.deepcopy(basket_og)
+        offers_applicable.sort(key=lambda x: len(x.base_items), reverse=True)
 
-            for offer in offer_list:
-                while basket.contains(offer.base_items):  # check if offer can be applied
-                    basket.remove(offer.base_items)
-                    basket.remove(offer.free_items)
-                    basket.add(offer.name)
+        for offer in offers_applicable:
+            while basket.contains(offer.base_items):  # check if offer can be applied
+                basket.remove(offer.base_items)
+                basket.remove(offer.free_items)
+                basket.add(offer.name)
 
-                    value = basket.value()
-                    if value < best_value:
-                        best_value = value
-                        best_basket = basket
+                value = basket.value()
+                if value < best_value:
+                    best_value = value
+                    best_basket = basket
 
         return best_basket
 
@@ -160,3 +158,4 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+

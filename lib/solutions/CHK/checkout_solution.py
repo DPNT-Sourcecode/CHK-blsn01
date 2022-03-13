@@ -36,8 +36,9 @@ class Basket:
         return True
 
     def contains(self, items: Counter) -> bool:
-        print(f'contains {items} in {self.items}...')
-        return (self.items & items) == items
+        res = (self.items & items) == items
+        print(f'contains {items} in {self.items} is {res}')
+        return res
     
     def remove(self, items: Counter) -> None:
         self.items -= items
@@ -103,4 +104,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

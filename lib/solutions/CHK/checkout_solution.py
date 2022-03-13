@@ -3,9 +3,9 @@ from typing import List, Callable, Set
 
 
 class Offer:
-    def __init__(self, name: str, sku_set: Counter):
+    def __init__(self, name: str, offer_set: Counter):
         self.name = name
-        self.sku_set = sku_set
+        self.offer_set = offer_set
 
 class Basket:
     def __init__(self, sku_prices: Set[str], offers: List[Offer]):
@@ -21,7 +21,9 @@ class Basket:
 
         # check offers
         for offer in self.offers:
-            tmp_counter = self.counter & offer.sku_set
+            if self.counter & offer.offer_set
+                self.counter -= offer.offer_set
+                self.counter[]
         
         return True
     
@@ -61,6 +63,7 @@ def checkout(skus) -> int:
             return -1
 
     return basket.value()
+
 
 
 

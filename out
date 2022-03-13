@@ -3492,3 +3492,43 @@ contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 
 contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
+id = CHK_R2_001, req = checkout("ABCDECBAABCABBAAAEEAA"), resp = 695
+Stopping client
+Notify round "CHK_R2", event "deploy"
+--------------------------------------------
+
+[31mResult is: FAILED[m
+Some requests have failed (14/40). Here are some of them:
+ - {"method":"checkout","params":["AAAAA"],"id":"CHK_R2_017"}, expected: 200, got: 230
+ - {"method":"checkout","params":["AAAAAA"],"id":"CHK_R2_018"}, expected: 250, got: 260
+ - {"method":"checkout","params":["AAAAAAA"],"id":"CHK_R2_019"}, expected: 300, got: 310
+[31mYou have received a penalty of: 10 min[m
+[34mThe round will restart now[m
+
+[33mLook at your failed trials and edit your code. When you've finished, deploy your code with "deploy"[m
+
+Challenge description saved to file: challenges/CHK_R2.txt.
+

@@ -8,14 +8,13 @@ class Offer:
         self.sku_set = sku_set
 
 class Basket:
-    def __init__(self, valid_skus: Set[str], prices: Dict[str, int], offers: List[Offer]):
+    def __init__(self, sku_prices: Set[str], offers: List[Offer]):
         self.counter = Counter()
-        self.valid_skus = valid_skus
-        self.prices = prices
+        self.sku_prices = sku_prices
         self.offers = offers
 
     def put(sku: str) -> bool:
-        if sku not in self.valid_skus:
+        if sku not in self.sku_prices:
             return False
 
         self.counter[sku] += 1
@@ -41,12 +40,18 @@ class Basket:
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
-
-    valid_skus = {'A', 'B', 'C', 'D', '3A@130', '2B@45'}
-    prices = 
-    basket = Basket()
+    sku_prices = {
+             'A' : 50,
+             'B' : 30,
+             'C' : 20,
+             'D' : 15,
+        '3A@130' : 130,
+        '2B@45'  : 45
+    }
+    basket = Basket(sku_prices)
 
     for sku in skus:
+
 
 
 

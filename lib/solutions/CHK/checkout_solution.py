@@ -76,7 +76,6 @@ class OfferManager:
             for offer in offer_comb:
                 if basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
-                    basket.remove(offer.free_items)
                     basket.add(offer.name)
 
                 value = basket.value()
@@ -117,6 +116,3 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
-
-
-

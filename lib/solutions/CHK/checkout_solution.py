@@ -1,13 +1,21 @@
 from collections import Counter
-from typing import List, Callable
+from typing import List, Callable, Set
 
 
 class Basket:
-    def __init__(self, offers: List[Callable]):
+    def __init__(self, valid_skus: Set[str], offers: List[Callable]):
         self.counter = Counter()
+        self.valid_skus = valid_skus
         self.offers = offers
 
-    def put(sku: )
+    def put(sku: str) -> bool:
+        if sku not in self.valid_skus:
+            return False
+        self.counter += sku
+        
+        return True
+    
+    def 
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -19,9 +27,6 @@ def checkout(skus):
     counter = Counter()
 
     for sku in skus:
-        # check validity
-        if sku not in valid_skus:
-            return -1
 
         counter[sku] += 1
 
@@ -33,6 +38,7 @@ def checkout(skus):
         if counter['B'] == 2:
             counter['B'] -= 2
             counter['2B'] += 1
+
 
 
 

@@ -3,7 +3,7 @@ from typing import List, Callable, Set
 
 
 class Offer:
-    def __init__(self, name: str, sku_set: Dict[str, int], price: int):
+    def __init__(self, name: str, sku_set: Dict[str, int]):
         self.name = names
         self.sku_set = sku_set
 
@@ -17,7 +17,11 @@ class Basket:
     def put(sku: str) -> bool:
         if sku not in self.valid_skus:
             return False
+
         self.counter[sku] += 1
+
+        # check offers
+        for offer in self.offers:
         
         return True
     
@@ -38,10 +42,12 @@ class Basket:
 # skus = unicode string
 def checkout(skus):
 
-    valid_skus = {'A', 'B', 'C', 'D', '3A@130'}
+    valid_skus = {'A', 'B', 'C', 'D', '3A@130', '2B@45'}
+    prices = 
     basket = Basket()
 
     for sku in skus:
+
 
 
 

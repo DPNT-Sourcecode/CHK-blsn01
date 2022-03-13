@@ -4,7 +4,7 @@ from typing import List, Callable, Set
 
 class Offer:
     def __init__(self, name: str, sku_set: Dict[str, int]):
-        self.name = names
+        self.name = name
         self.sku_set = sku_set
 
 class Basket:
@@ -21,6 +21,7 @@ class Basket:
 
         # check offers
         for offer in self.offers:
+            tmp_counter = self.counter
         
         return True
     
@@ -39,7 +40,7 @@ class Basket:
 
 # noinspection PyUnusedLocal
 # skus = unicode string
-def checkout(skus):
+def checkout(skus) -> int:
     sku_prices = {
              'A' : 50,
              'B' : 30,
@@ -48,20 +49,17 @@ def checkout(skus):
         '3A@130' : 130,
         '2B@45'  : 45,
     }
-    offers = {
+    offers = [
         Offer('3A@130', { 'A' : 3 }),
         Offer('2A@45', { 'B' : 2 }),
-    }
-    basket = Basket(sku_prices)
+    ]
+
+    basket = Basket(sku_prices, offers)
 
     for sku in skus:
+        if not basket.put(sku):
+            return -1
 
-
-
-
-
-
-
-
+    return basket.value()
 
 

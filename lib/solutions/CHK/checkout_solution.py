@@ -1,9 +1,13 @@
 from collections import Counter
+from typing import List, Callable
 
 
 class Basket:
-    def __init__(self):
+    def __init__(self, offers: List[Callable]):
         self.counter = Counter()
+        self.offers = offers
+
+    def put(sku: )
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -29,6 +33,7 @@ def checkout(skus):
         if counter['B'] == 2:
             counter['B'] -= 2
             counter['2B'] += 1
+
 
 
 

@@ -11,7 +11,7 @@ class Offer:
 
 class Basket:
     def __init__(self, sku_prices: Dict[str, int]):
-        self.items = Counter()
+        self.paid_items = Counter()
         self.sku_prices = sku_prices
 
     def add(self, sku: str) -> bool:
@@ -20,24 +20,24 @@ class Basket:
         """
         if sku not in self.sku_prices:
             return False
-        self.items[sku] += 1
+        self.paid_items[sku] += 1
 
     def update(self, skus: str) -> bool:
         """
         Replace basket items.
         """
-        self.items = Counter()
+        self.paid_items = Counter()
         for sku in skus:
             if sku not in self.sku_prices:
                 return False
-            self.items[sku] += 1
+            self.paid_items[sku] += 1
         return True
     
     def value(self) -> int:
         """
         Return value of basket.
         """
-        return sum([self.sku_prices[sku] * self.items[sku] for sku in self.items])
+        return sum([self.sku_prices[sku] * self.paid_items[sku] for sku in self.paid_items])
 
 class OfferManager:
     def apply(basket: Basket, offers: List[Offer]) -> Basket:
@@ -81,6 +81,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

@@ -13,7 +13,7 @@ class Basket:
         self.sku_prices = sku_prices
         self.offers = offers
 
-    def put(sku: str) -> bool:
+    def put(self, sku: str) -> bool:
         if sku not in self.sku_prices:
             return False
 
@@ -29,7 +29,7 @@ class Basket:
         
         return True
     
-    def value() -> int:
+    def value(self) -> int:
         return sum([self.sku_prices[sku] for sku in self.items])
 
 # noinspection PyUnusedLocal
@@ -55,6 +55,7 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 
 
 

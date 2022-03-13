@@ -11,7 +11,7 @@ class Offer:
 
 class Basket:
     def __init__(self, sku_prices: Dict[str, int]):
-        self.paid_items = Counter()
+        self.items = Counter()
         self.sku_prices = sku_prices
 
     def add(self, sku: str) -> bool:
@@ -20,31 +20,31 @@ class Basket:
         """
         if sku not in self.sku_prices:
             return False
-        self.paid_items[sku] += 1
+        self.items[sku] += 1
 
     def update(self, skus: str) -> bool:
         """
         Replace basket items.
         """
-        self.paid_items = Counter()
+        self.items = Counter()
         for sku in skus:
             if sku not in self.sku_prices:
                 return False
-            self.paid_items[sku] += 1
+            self.items[sku] += 1
         return True
 
     def contains(self, items: Counter) -> bool:
-        return (self.paid_items & items) == items
+        return (self.items & items) == items
     
     def remove(self, items: Counter) -> None:
-        self.paid_items -= items
-        self.paid_items += Counter() # cleanup
+        self.items -= items
+        self.items += Counter() # cleanup
     
     def value(self) -> int:
         """
         Return value of basket.
         """
-        return sum([self.sku_prices[sku] * self.paid_items[sku] for sku in self.paid_items])
+        return sum([self.sku_prices[sku] * self.items[sku] for sku in self.paid_items])
 
 class OfferManager:
     def apply(basket: Basket, offers: List[Offer]) -> Basket:
@@ -57,7 +57,10 @@ class OfferManager:
                 if basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
                     basket.add(offer.name)
+            best_value = min(best_value, basket.value())
 
+    def final_item_list(basket: Basket):
+        pass
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -87,4 +90,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

@@ -37,7 +37,8 @@ class Basket:
         return (self.paid_items & items) == items
     
     def remove(self, items: Counter) -> None:
-        self.paid_items
+        self.paid_items -= items
+        self.paid_items += Counter() # cleanup
     
     def value(self) -> int:
         """
@@ -53,10 +54,9 @@ class OfferManager:
         best_value = math.inf
         for offer_perm in permutations(offers):
             for offer in offer_perm:
-                if (self.items & offer.base_items) == offer.base_items:  # check if offer can be applied
-                    self.items -= offer.base_items
-                    self.items += Counter()  # clean up
-                    self.items[offer.name] += 1
+                if basket.contains(offer.base_items):  # check if offer can be applied
+                    basket.remove(offer.base_items)
+                    basket.add(offer.name)
 
 
 # noinspection PyUnusedLocal
@@ -87,3 +87,4 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+

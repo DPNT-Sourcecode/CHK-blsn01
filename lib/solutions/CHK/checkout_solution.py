@@ -2,7 +2,7 @@ import copy
 import math
 
 from collections import Counter
-from itertools import permutations
+from itertools import combinations_with_replacement
 from typing import List, Dict
 
 
@@ -61,9 +61,12 @@ class OfferManager:
         best_value = math.inf
         best_basket = None
 
-        print(f'num permutations: {len(list(permutations(offers)))}')
+        offers_applicable = []
+        for offer in offers:
+            if basket.contains(offer.base_items):
+                offers_applicable.append(offer)
 
-        for offer_perm in permutations(offers):
+        for offer_perm in combinations_with_replacement(offers, 4):
             print(f'testing perm {offer_perm}')
             basket = copy.deepcopy(basket_og)
 
@@ -110,6 +113,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

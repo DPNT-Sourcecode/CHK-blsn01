@@ -69,20 +69,20 @@ class OfferManager:
         if not offers_applicable:
             return basket_og
 
-        for offer_comb in combinations_with_replacement(offers_applicable, len(offers_applicable)):
-            print(f'testing comb {offer_comb}')
+        for offer_list in permutations(offers_applicable):
+            print(f'testing offer list {offer_list}')
             basket = copy.deepcopy(basket_og)
 
-            for offer in offer_comb:
-                if basket.contains(offer.base_items):  # check if offer can be applied
+            for offer in offer_list:
+                while basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
                     basket.remove(offer.free_items)
                     basket.add(offer.name)
 
-                value = basket.value()
-                if value < best_value:
-                    best_value = value
-                    best_basket = basket
+                    value = basket.value()
+                    if value < best_value:
+                        best_value = value
+                        best_basket = basket
 
         return best_basket
 
@@ -117,6 +117,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

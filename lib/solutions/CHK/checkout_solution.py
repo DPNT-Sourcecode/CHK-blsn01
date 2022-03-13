@@ -24,7 +24,7 @@ class Basket:
         if sku not in self.prices:
             return False
         self.items[sku] += 1
-        print(f'after adding {self.items}')
+        #print(f'after adding {self.items}')
 
     def update(self, skus: str) -> bool:
         """
@@ -39,13 +39,13 @@ class Basket:
 
     def contains(self, items: Counter) -> bool:
         res = (self.items & items) == items
-        print(f'contains {items} in {self.items} is {res}')
+        #print(f'contains {items} in {self.items} is {res}')
         return res
     
     def remove(self, items: Counter) -> None:
         self.items -= items
         self.items += Counter() # cleanup
-        print(f'after removing {self.items}')
+        #print(f'after removing {self.items}')
     
     def value(self) -> int:
         """
@@ -70,7 +70,7 @@ class OfferManager:
             return basket_og
 
         for offer_list in permutations(offers_applicable):
-            print(f'testing offer list {offer_list}')
+            #print(f'testing offer list {offer_list}')
             basket = copy.deepcopy(basket_og)
 
             for offer in offer_list:
@@ -160,6 +160,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

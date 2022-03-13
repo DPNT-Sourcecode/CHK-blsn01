@@ -9,15 +9,20 @@ class Offer:
         self.free_items = free_items
 
 class Basket:
-    def __init__(self, skus: str, sku_prices: Dict[str, int], offers: List[Offer]):
+    def __init__(self, skus: str, sku_prices: Dict[str, int]):
         self.items = Counter()
         self.sku_prices = sku_prices
-        self.offers = offers
 
+    def add(self, sku: str) -> bool:
+        if sku not in self.sku_prices:
+            return False
+        self.items[sku] += 1
+
+    def update(self, skus: str) -> bool:
+        self.items = Counter()
         for sku in skus:
             if sku not in self.sku_prices:
                 return False
-
             self.items[sku] += 1
         return True
     
@@ -58,13 +63,13 @@ def checkout(skus: str) -> int:
         Offer('2E+1B@45', Counter(base_items={'E': 2}, free_items={'B': 1})),
     ]
 
-    basket = Basket(sku_prices, offers)
+    basket = Basket(sku_prices)
 
-    for sku in skus:
-        if not basket.put(sku):
-            return -1
+    if not basket.update(skus):
+        return -1
 
     return basket.value()
+
 
 
 

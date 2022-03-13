@@ -12,8 +12,8 @@ class Offer:
         self.free_items = free_items
 
 class Basket:
-    def __init__(self, prices: Dict[str, int]):
-        self.items = Counter()
+    def __init__(self, prices: Dict[str, int], items: Counter = Counter()):
+        self.items = items
         self.prices = prices
 
     def add(self, sku: str) -> bool:
@@ -57,7 +57,7 @@ class OfferManager:
         best_basket = None
 
         for offer_perm in permutations(offers):
-            basket = basket_og.copy()
+            basket = Basket(basket_og.prices, basket_og.items)
 
             for offer in offer_perm:
                 if basket.contains(offer.base_items):  # check if offer can be applied
@@ -102,6 +102,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

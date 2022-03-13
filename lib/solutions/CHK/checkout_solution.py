@@ -31,7 +31,7 @@ class Basket:
         Replace basket items.
         """
         self.items = Counter()
-        for sku in skus:
+       @sku in skus:
             if sku not in self.prices:
                 return False
             self.items[sku] += 1
@@ -51,7 +51,7 @@ class Basket:
         """
         Return value of basket.
         """
-        return sum([self.prices[sku] * self.items[sku] for sku in self.items])
+        return sum([self.prices[sku] * self.items[sku]@sku in self.items])
 
 class OfferManager:
     def apply(basket_og: Basket, offers: List[Offer]) -> Basket:
@@ -62,18 +62,18 @@ class OfferManager:
         best_basket = None
 
         offers_applicable = []
-        for offer in offers:
+       @offer in offers:
             if basket_og.contains(offer.base_items):
                 offers_applicable.append(offer)
 
         if not offers_applicable:
             return basket_og
 
-        for offer_list in permutations(offers_applicable):
+       @offer_list in permutations(offers_applicable):
             print(f'testing offer list {offer_list}')
             basket = copy.deepcopy(basket_og)
 
-            for offer in offer_list:
+           @offer in offer_list:
                 while basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
                     basket.remove(offer.free_items)
@@ -122,25 +122,25 @@ def checkout(skus: str) -> int:
         '3A@130' : 130,
         '5A@200' : 200,
         '2B@45'  : 45,
-        '2E+1B@45' : 80,
-        '2F+1F@20' : 20,
+        '2E+1B' : 80,
+        '2F+1F' : 20,
         '5H@45' : 45,
-        '10H for 80': 80,
-        '2K for 150': 150,
-        '3N get one M free' : 120,
-        '5P for 200' : 200,
-        '3Q for 80' : 80,
-        '3R get one Q free' : 150,
-        '3U get one U free' : 120,
-        '2V for 90' : 90,
-        '3V for 130' : 130,
+        '10H@80': 80,
+        '2K@150': 150,
+        '3N+1M' : 120,
+        '5P@200' : 200,
+        '3Q@80' : 80,
+        '3R+1Q' : 150,
+        '3U+1U' : 120,
+        '2V@90' : 90,
+        '3V@130' : 130,
     }
     offers = [
         Offer('3A@130', base_items=Counter({'A': 3})),
         Offer('5A@200', base_items=Counter({'A': 5})),
         Offer('2B@45', base_items=Counter({'B': 2})),
-        Offer('2E+1B@45', base_items=Counter({'E': 2}), free_items=Counter({'B': 1})),
-        Offer('2F+1F@20', base_items=Counter({'F': 2}), free_items=Counter({'F': 1})),
+        Offer('2E+1B', base_items=Counter({'E': 2}), free_items=Counter({'B': 1})),
+        Offer('2F+1F', base_items=Counter({'F': 2}), free_items=Counter({'F': 1})),
     ]
 
     basket = Basket(prices)
@@ -150,5 +150,6 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 

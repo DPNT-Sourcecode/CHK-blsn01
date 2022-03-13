@@ -8,7 +8,7 @@ Your progress (2/3):
  [32m✓[m    └── HLO_R2  - [32mcompleted in [m1 min (+0 min penalty)
  [34m@[m CHK (5 rounds) - official - Supermarket checkout
  [32m✓[m    ├── CHK_R1  - [32mcompleted in [m75 min (+30 min penalty)
- [34m>[m    ├── CHK_R2  - [34mrunning for [m124 min [31m(+140 min penalty)[m
+ [34m>[m    ├── CHK_R2  - [34mrunning for [m127 min [31m(+150 min penalty)[m
       ├── CHK_R3  - not started
       ├── CHK_R4  - not started
       └── CHK_R5  - not started
@@ -73,7 +73,7 @@ contains Counter({'A': 3}) in Counter({'A': 3}) is True
 contains Counter({'A': 5}) in Counter({'A': 3}) is False
 contains Counter({'B': 2}) in Counter({'A': 3}) is False
 contains Counter({'E': 2}) in Counter({'A': 3}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850850>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede2b0>,)
 contains Counter({'A': 3}) in Counter({'A': 3}) is True
 after removing Counter()
 after removing Counter()
@@ -83,7 +83,7 @@ contains Counter({'A': 3}) in Counter({'A': 4}) is True
 contains Counter({'A': 5}) in Counter({'A': 4}) is False
 contains Counter({'B': 2}) in Counter({'A': 4}) is False
 contains Counter({'E': 2}) in Counter({'A': 4}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b4e80>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2f40>,)
 contains Counter({'A': 3}) in Counter({'A': 4}) is True
 after removing Counter({'A': 1})
 after removing Counter({'A': 1})
@@ -93,19 +93,19 @@ contains Counter({'A': 3}) in Counter({'A': 5}) is True
 contains Counter({'A': 5}) in Counter({'A': 5}) is True
 contains Counter({'B': 2}) in Counter({'A': 5}) is False
 contains Counter({'E': 2}) in Counter({'A': 5}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede220>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede220>)
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 after removing Counter({'A': 2})
 after removing Counter({'A': 2})
 after adding Counter({'A': 2, '3A@130': 1})
 contains Counter({'A': 3}) in Counter({'A': 2, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503d0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede220>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede340>)
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 after removing Counter({'A': 2})
 after removing Counter({'A': 2})
 after adding Counter({'A': 2, '3A@130': 1})
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503d0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503d0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede340>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede340>)
 contains Counter({'A': 5}) in Counter({'A': 5}) is True
 after removing Counter()
 after removing Counter()
@@ -116,7 +116,7 @@ contains Counter({'A': 3}) in Counter({'A': 6}) is True
 contains Counter({'A': 5}) in Counter({'A': 6}) is True
 contains Counter({'B': 2}) in Counter({'A': 6}) is False
 contains Counter({'E': 2}) in Counter({'A': 6}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2f40>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2f40>)
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 after removing Counter({'A': 3})
 after removing Counter({'A': 3})
@@ -125,13 +125,13 @@ contains Counter({'A': 3}) in Counter({'A': 3, '3A@130': 1}) is True
 after removing Counter({'3A@130': 1})
 after removing Counter({'3A@130': 1})
 after adding Counter({'3A@130': 2})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850370>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2f40>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede280>)
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 after removing Counter({'A': 3})
 after removing Counter({'A': 3})
 after adding Counter({'A': 3, '3A@130': 1})
 contains Counter({'A': 5}) in Counter({'A': 3, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850370>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850370>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede280>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede280>)
 contains Counter({'A': 5}) in Counter({'A': 6}) is True
 after removing Counter({'A': 1})
 after removing Counter({'A': 1})
@@ -142,7 +142,7 @@ contains Counter({'A': 3}) in Counter({'A': 7}) is True
 contains Counter({'A': 5}) in Counter({'A': 7}) is True
 contains Counter({'B': 2}) in Counter({'A': 7}) is False
 contains Counter({'E': 2}) in Counter({'A': 7}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>)
 contains Counter({'A': 3}) in Counter({'A': 7}) is True
 after removing Counter({'A': 4})
 after removing Counter({'A': 4})
@@ -151,13 +151,13 @@ contains Counter({'A': 3}) in Counter({'A': 4, '3A@130': 1}) is True
 after removing Counter({'A': 1, '3A@130': 1})
 after removing Counter({'A': 1, '3A@130': 1})
 after adding Counter({'3A@130': 2, 'A': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502b0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede2b0>)
 contains Counter({'A': 3}) in Counter({'A': 7}) is True
 after removing Counter({'A': 4})
 after removing Counter({'A': 4})
 after adding Counter({'A': 4, '3A@130': 1})
 contains Counter({'A': 5}) in Counter({'A': 4, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502b0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502b0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede2b0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede2b0>)
 contains Counter({'A': 5}) in Counter({'A': 7}) is True
 after removing Counter({'A': 2})
 after removing Counter({'A': 2})
@@ -168,7 +168,7 @@ contains Counter({'A': 3}) in Counter({'A': 8}) is True
 contains Counter({'A': 5}) in Counter({'A': 8}) is True
 contains Counter({'B': 2}) in Counter({'A': 8}) is False
 contains Counter({'E': 2}) in Counter({'A': 8}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503a0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503a0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede1f0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede1f0>)
 contains Counter({'A': 3}) in Counter({'A': 8}) is True
 after removing Counter({'A': 5})
 after removing Counter({'A': 5})
@@ -177,7 +177,7 @@ contains Counter({'A': 3}) in Counter({'A': 5, '3A@130': 1}) is True
 after removing Counter({'A': 2, '3A@130': 1})
 after removing Counter({'A': 2, '3A@130': 1})
 after adding Counter({'A': 2, '3A@130': 2})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8503a0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850280>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede1f0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>)
 contains Counter({'A': 3}) in Counter({'A': 8}) is True
 after removing Counter({'A': 5})
 after removing Counter({'A': 5})
@@ -186,7 +186,7 @@ contains Counter({'A': 5}) in Counter({'A': 5, '3A@130': 1}) is True
 after removing Counter({'3A@130': 1})
 after removing Counter({'3A@130': 1})
 after adding Counter({'3A@130': 1, '5A@200': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850280>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850280>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>)
 contains Counter({'A': 5}) in Counter({'A': 8}) is True
 after removing Counter({'A': 3})
 after removing Counter({'A': 3})
@@ -197,7 +197,7 @@ contains Counter({'A': 3}) in Counter({'A': 9}) is True
 contains Counter({'A': 5}) in Counter({'A': 9}) is True
 contains Counter({'B': 2}) in Counter({'A': 9}) is False
 contains Counter({'E': 2}) in Counter({'A': 9}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>)
 contains Counter({'A': 3}) in Counter({'A': 9}) is True
 after removing Counter({'A': 6})
 after removing Counter({'A': 6})
@@ -206,7 +206,7 @@ contains Counter({'A': 3}) in Counter({'A': 6, '3A@130': 1}) is True
 after removing Counter({'A': 3, '3A@130': 1})
 after removing Counter({'A': 3, '3A@130': 1})
 after adding Counter({'A': 3, '3A@130': 2})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2340>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>)
 contains Counter({'A': 3}) in Counter({'A': 9}) is True
 after removing Counter({'A': 6})
 after removing Counter({'A': 6})
@@ -215,7 +215,7 @@ contains Counter({'A': 5}) in Counter({'A': 6, '3A@130': 1}) is True
 after removing Counter({'A': 1, '3A@130': 1})
 after removing Counter({'A': 1, '3A@130': 1})
 after adding Counter({'A': 1, '3A@130': 1, '5A@200': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8502e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>)
 contains Counter({'A': 5}) in Counter({'A': 9}) is True
 after removing Counter({'A': 4})
 after removing Counter({'A': 4})
@@ -226,7 +226,7 @@ contains Counter({'A': 3}) in Counter({'A': 10}) is True
 contains Counter({'A': 5}) in Counter({'A': 10}) is True
 contains Counter({'B': 2}) in Counter({'A': 10}) is False
 contains Counter({'E': 2}) in Counter({'A': 10}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b47f0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b47f0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 3}) in Counter({'A': 10}) is True
 after removing Counter({'A': 7})
 after removing Counter({'A': 7})
@@ -235,7 +235,7 @@ contains Counter({'A': 3}) in Counter({'A': 7, '3A@130': 1}) is True
 after removing Counter({'A': 4, '3A@130': 1})
 after removing Counter({'A': 4, '3A@130': 1})
 after adding Counter({'A': 4, '3A@130': 2})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b47f0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b44c0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede400>)
 contains Counter({'A': 3}) in Counter({'A': 10}) is True
 after removing Counter({'A': 7})
 after removing Counter({'A': 7})
@@ -244,7 +244,7 @@ contains Counter({'A': 5}) in Counter({'A': 7, '3A@130': 1}) is True
 after removing Counter({'A': 2, '3A@130': 1})
 after removing Counter({'A': 2, '3A@130': 1})
 after adding Counter({'A': 2, '3A@130': 1, '5A@200': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b44c0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8b44c0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede400>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede400>)
 contains Counter({'A': 5}) in Counter({'A': 10}) is True
 after removing Counter({'A': 5})
 after removing Counter({'A': 5})
@@ -258,7 +258,7 @@ contains Counter({'A': 3}) in Counter({'E': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 2}) is False
 contains Counter({'E': 2}) in Counter({'E': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>,)
 contains Counter({'E': 2}) in Counter({'E': 2}) is True
 after removing Counter()
 after removing Counter()
@@ -268,7 +268,7 @@ contains Counter({'A': 3}) in Counter({'E': 2, 'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 2, 'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'E': 2, 'B': 1}) is False
 contains Counter({'E': 2}) in Counter({'E': 2, 'B': 1}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507f0>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede8e0>,)
 contains Counter({'E': 2}) in Counter({'E': 2, 'B': 1}) is True
 after removing Counter({'B': 1})
 after removing Counter()
@@ -278,7 +278,7 @@ contains Counter({'A': 3}) in Counter({'E': 3, 'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 3, 'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'E': 3, 'B': 1}) is False
 contains Counter({'E': 2}) in Counter({'E': 3, 'B': 1}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850850>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>,)
 contains Counter({'E': 2}) in Counter({'E': 3, 'B': 1}) is True
 after removing Counter({'E': 1, 'B': 1})
 after removing Counter({'E': 1})
@@ -288,13 +288,13 @@ contains Counter({'A': 3}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 contains Counter({'E': 2}) in Counter({'E': 4, 'B': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850d60>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850d60>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede8e0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede8e0>)
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'E': 4})
 after removing Counter({'E': 4})
 after adding Counter({'E': 4, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'E': 4, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850d60>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede8e0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>)
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'E': 4})
 after removing Counter({'E': 4})
@@ -303,7 +303,7 @@ contains Counter({'E': 2}) in Counter({'E': 4, '2B@45': 1}) is True
 after removing Counter({'E': 2, '2B@45': 1})
 after removing Counter({'E': 2, '2B@45': 1})
 after adding Counter({'E': 2, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede5b0>)
 contains Counter({'E': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'E': 2, 'B': 2})
 after removing Counter({'E': 2, 'B': 1})
@@ -317,13 +317,13 @@ contains Counter({'A': 3}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 contains Counter({'E': 2}) in Counter({'E': 4, 'B': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850eb0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0eded30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0eded30>)
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'E': 4})
 after removing Counter({'E': 4})
 after adding Counter({'E': 4, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'E': 4, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850e50>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0eded30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'E': 4})
 after removing Counter({'E': 4})
@@ -332,7 +332,7 @@ contains Counter({'E': 2}) in Counter({'E': 4, '2B@45': 1}) is True
 after removing Counter({'E': 2, '2B@45': 1})
 after removing Counter({'E': 2, '2B@45': 1})
 after adding Counter({'E': 2, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850e50>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850e50>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'E': 2}) in Counter({'E': 4, 'B': 2}) is True
 after removing Counter({'B': 2, 'E': 2})
 after removing Counter({'E': 2, 'B': 1})
@@ -356,7 +356,7 @@ contains Counter({'A': 3}) in Counter({'A': 3}) is True
 contains Counter({'A': 5}) in Counter({'A': 3}) is False
 contains Counter({'B': 2}) in Counter({'A': 3}) is False
 contains Counter({'E': 2}) in Counter({'A': 3}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850760>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edef10>,)
 contains Counter({'A': 3}) in Counter({'A': 3}) is True
 after removing Counter()
 after removing Counter()
@@ -366,7 +366,7 @@ contains Counter({'A': 3}) in Counter({'A': 4}) is True
 contains Counter({'A': 5}) in Counter({'A': 4}) is False
 contains Counter({'B': 2}) in Counter({'A': 4}) is False
 contains Counter({'E': 2}) in Counter({'A': 4}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850070>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede280>,)
 contains Counter({'A': 3}) in Counter({'A': 4}) is True
 after removing Counter({'A': 1})
 after removing Counter({'A': 1})
@@ -376,19 +376,19 @@ contains Counter({'A': 3}) in Counter({'A': 5}) is True
 contains Counter({'A': 5}) in Counter({'A': 5}) is True
 contains Counter({'B': 2}) in Counter({'A': 5}) is False
 contains Counter({'E': 2}) in Counter({'A': 5}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeca0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeca0>)
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 after removing Counter({'A': 2})
 after removing Counter({'A': 2})
 after adding Counter({'A': 2, '3A@130': 1})
 contains Counter({'A': 3}) in Counter({'A': 2, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850850>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeca0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 after removing Counter({'A': 2})
 after removing Counter({'A': 2})
 after adding Counter({'A': 2, '3A@130': 1})
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850850>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850850>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 5}) in Counter({'A': 5}) is True
 after removing Counter()
 after removing Counter()
@@ -399,7 +399,7 @@ contains Counter({'A': 3}) in Counter({'A': 6}) is True
 contains Counter({'A': 5}) in Counter({'A': 6}) is True
 contains Counter({'B': 2}) in Counter({'A': 6}) is False
 contains Counter({'E': 2}) in Counter({'A': 6}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede250>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede250>)
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 after removing Counter({'A': 3})
 after removing Counter({'A': 3})
@@ -408,13 +408,13 @@ contains Counter({'A': 3}) in Counter({'A': 3, '3A@130': 1}) is True
 after removing Counter({'3A@130': 1})
 after removing Counter({'3A@130': 1})
 after adding Counter({'3A@130': 2})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8507c0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede250>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>)
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 after removing Counter({'A': 3})
 after removing Counter({'A': 3})
 after adding Counter({'A': 3, '3A@130': 1})
 contains Counter({'A': 5}) in Counter({'A': 3, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>)
 contains Counter({'A': 5}) in Counter({'A': 6}) is True
 after removing Counter({'A': 1})
 after removing Counter({'A': 1})
@@ -430,7 +430,7 @@ contains Counter({'A': 3}) in Counter({'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'B': 2}) is True
 contains Counter({'E': 2}) in Counter({'B': 2}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede2e0>,)
 contains Counter({'B': 2}) in Counter({'B': 2}) is True
 after removing Counter()
 after removing Counter()
@@ -440,7 +440,7 @@ contains Counter({'A': 3}) in Counter({'B': 3}) is False
 contains Counter({'A': 5}) in Counter({'B': 3}) is False
 contains Counter({'B': 2}) in Counter({'B': 3}) is True
 contains Counter({'E': 2}) in Counter({'B': 3}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850ee0>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edef40>,)
 contains Counter({'B': 2}) in Counter({'B': 3}) is True
 after removing Counter({'B': 1})
 after removing Counter({'B': 1})
@@ -450,7 +450,7 @@ contains Counter({'A': 3}) in Counter({'B': 4}) is False
 contains Counter({'A': 5}) in Counter({'B': 4}) is False
 contains Counter({'B': 2}) in Counter({'B': 4}) is True
 contains Counter({'E': 2}) in Counter({'B': 4}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac8745e0>,)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>,)
 contains Counter({'B': 2}) in Counter({'B': 4}) is True
 after removing Counter({'B': 2})
 after removing Counter({'B': 2})
@@ -460,13 +460,13 @@ contains Counter({'A': 3}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) 
 contains Counter({'A': 5}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is False
 contains Counter({'B': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
 contains Counter({'E': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edef10>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edef10>)
 contains Counter({'B': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
 after removing Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2})
 after removing Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2})
 after adding Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850730>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850760>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edef10>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede100>)
 contains Counter({'B': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
 after removing Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2})
 after removing Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2})
@@ -475,7 +475,7 @@ contains Counter({'E': 2}) in Counter({'A': 2, 'C': 2, 'D': 2, 'E': 2, '2B@45': 
 after removing Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1})
 after removing Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1})
 after adding Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850760>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850760>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede100>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede100>)
 contains Counter({'E': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
 after removing Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2})
 after removing Counter({'A': 2, 'C': 2, 'D': 2, 'B': 1})
@@ -486,13 +486,13 @@ contains Counter({'A': 3}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) 
 contains Counter({'A': 5}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
 contains Counter({'E': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac874880>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac874880>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2})
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2})
 after adding Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac874880>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac874040>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>)
 contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2})
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2})
@@ -501,7 +501,7 @@ contains Counter({'E': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, '2B@45': 
 after removing Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1})
 after removing Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1})
 after adding Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac874040>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac874040>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ededc0>)
 contains Counter({'E': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'B': 2})
 after removing Counter({'C': 2, 'A': 2, 'D': 2, 'B': 1})
@@ -512,7 +512,7 @@ contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 contains Counter({'B': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 contains Counter({'E': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -523,7 +523,7 @@ after removing Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 1})
 after adding Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2})
 contains Counter({'A': 3}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
 contains Counter({'A': 3}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -534,7 +534,7 @@ after removing Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 1})
 after adding Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2})
 contains Counter({'A': 3}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
 contains Counter({'A': 5}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -548,7 +548,7 @@ contains Counter({'B': 2}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is 
 after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after adding Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -562,7 +562,7 @@ contains Counter({'E': 2}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is 
 after removing Counter({'B': 3, 'A': 2, '3A@130': 2})
 after removing Counter({'A': 2, 'B': 2, '3A@130': 2})
 after adding Counter({'A': 2, 'B': 2, '3A@130': 2, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -573,7 +573,7 @@ after removing Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 1})
 after adding Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2})
 contains Counter({'A': 5}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
 contains Counter({'A': 5}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -587,7 +587,7 @@ contains Counter({'B': 2}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is 
 after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after adding Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -601,7 +601,7 @@ contains Counter({'E': 2}) in Counter({'B': 3, 'A': 2, 'E': 2, '3A@130': 2}) is 
 after removing Counter({'B': 3, 'A': 2, '3A@130': 2})
 after removing Counter({'A': 2, 'B': 2, '3A@130': 2})
 after adding Counter({'A': 2, 'B': 2, '3A@130': 2, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -615,7 +615,7 @@ after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after removing Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1})
 after adding Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -632,7 +632,7 @@ contains Counter({'E': 2}) in Counter({'A': 2, 'E': 2, '3A@130': 2, 'B': 1, '2B@
 after removing Counter({'A': 2, '3A@130': 2, 'B': 1, '2B@45': 1})
 after removing Counter({'A': 2, '3A@130': 2, '2B@45': 1})
 after adding Counter({'A': 2, '3A@130': 2, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -646,7 +646,7 @@ after removing Counter({'B': 3, 'A': 2, '3A@130': 2})
 after removing Counter({'A': 2, 'B': 2, '3A@130': 2})
 after adding Counter({'A': 2, 'B': 2, '3A@130': 2, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 2, 'B': 2, '3A@130': 2, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -657,7 +657,7 @@ after removing Counter({'B': 3, 'E': 2, '3A@130': 1})
 after adding Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1})
 contains Counter({'A': 5}) in Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -671,7 +671,7 @@ contains Counter({'B': 2}) in Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1}
 after removing Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1})
 after removing Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1})
 after adding Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -685,7 +685,7 @@ contains Counter({'E': 2}) in Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1}
 after removing Counter({'B': 3, '3A@130': 1, '5A@200': 1})
 after removing Counter({'B': 2, '3A@130': 1, '5A@200': 1})
 after adding Counter({'B': 2, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -699,7 +699,7 @@ after removing Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1})
 after removing Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1})
 after adding Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -716,7 +716,7 @@ contains Counter({'E': 2}) in Counter({'E': 2, 'B': 1, '3A@130': 1, '5A@200': 1,
 after removing Counter({'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'3A@130': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'3A@130': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -730,7 +730,7 @@ after removing Counter({'B': 3, '3A@130': 1, '5A@200': 1})
 after removing Counter({'B': 2, '3A@130': 1, '5A@200': 1})
 after adding Counter({'B': 2, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'B': 2, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -741,7 +741,7 @@ after removing Counter({'A': 5, 'E': 2, 'B': 1, '3A@130': 1})
 after adding Counter({'A': 5, 'E': 2, 'B': 1, '3A@130': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 5, 'E': 2, 'B': 1, '3A@130': 1, '2B@45': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 5, 'E': 2, 'B': 1, '3A@130': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -755,7 +755,7 @@ contains Counter({'E': 2}) in Counter({'A': 5, 'E': 2, 'B': 1, '3A@130': 1, '2B@
 after removing Counter({'A': 5, 'B': 1, '3A@130': 1, '2B@45': 1})
 after removing Counter({'A': 5, '3A@130': 1, '2B@45': 1})
 after adding Counter({'A': 5, '3A@130': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -769,7 +769,7 @@ after removing Counter({'A': 5, 'B': 1, '3A@130': 1, '2B@45': 1})
 after removing Counter({'A': 5, '3A@130': 1, '2B@45': 1})
 after adding Counter({'A': 5, '3A@130': 1, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 5, '3A@130': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850f70>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede460>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
 after removing Counter({'A': 5, 'B': 3, 'E': 2})
@@ -780,7 +780,7 @@ after removing Counter({'A': 5, 'B': 2, '3A@130': 1})
 after adding Counter({'A': 5, 'B': 2, '3A@130': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 5, 'B': 2, '3A@130': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'A': 5, 'B': 2, '3A@130': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -788,7 +788,7 @@ after adding Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1})
 contains Counter({'A': 5}) in Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -799,7 +799,7 @@ contains Counter({'B': 2}) in Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1}) is 
 after removing Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1})
 after removing Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1})
 after adding Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -810,7 +810,7 @@ contains Counter({'E': 2}) in Counter({'A': 3, 'B': 3, 'E': 2, '5A@200': 1}) is 
 after removing Counter({'A': 3, 'B': 3, '5A@200': 1})
 after removing Counter({'A': 3, 'B': 2, '5A@200': 1})
 after adding Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -821,7 +821,7 @@ after removing Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1})
 after removing Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1})
 after adding Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -835,7 +835,7 @@ contains Counter({'E': 2}) in Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@
 after removing Counter({'A': 3, 'B': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'A': 3, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 3, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -846,7 +846,7 @@ after removing Counter({'A': 3, 'B': 3, '5A@200': 1})
 after removing Counter({'A': 3, 'B': 2, '5A@200': 1})
 after adding Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -857,7 +857,7 @@ after removing Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1})
 after adding Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -871,7 +871,7 @@ contains Counter({'E': 2}) in Counter({'A': 3, 'E': 2, 'B': 1, '5A@200': 1, '2B@
 after removing Counter({'A': 3, 'B': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'A': 3, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 3, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -885,7 +885,7 @@ after removing Counter({'A': 3, 'B': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'A': 3, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 3, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 3, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850190>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede070>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'A': 5}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
 after removing Counter({'A': 3, 'B': 3, 'E': 2})
@@ -896,7 +896,7 @@ after removing Counter({'A': 3, 'B': 2, '5A@200': 1})
 after adding Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'A': 3, 'B': 2, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>)
 contains Counter({'B': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
@@ -904,7 +904,7 @@ after adding Counter({'A': 8, 'E': 2, 'B': 1, '2B@45': 1})
 contains Counter({'B': 2}) in Counter({'A': 8, 'E': 2, 'B': 1, '2B@45': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 8, 'E': 2, 'B': 1, '2B@45': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 8, 'E': 2, 'B': 1, '2B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'B': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
@@ -915,7 +915,7 @@ contains Counter({'E': 2}) in Counter({'A': 8, 'E': 2, 'B': 1, '2B@45': 1}) is T
 after removing Counter({'A': 8, 'B': 1, '2B@45': 1})
 after removing Counter({'A': 8, '2B@45': 1})
 after adding Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'B': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
@@ -926,7 +926,7 @@ after removing Counter({'A': 8, 'B': 1, '2B@45': 1})
 after removing Counter({'A': 8, '2B@45': 1})
 after adding Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850910>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2eb0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'B': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
 after removing Counter({'A': 8, 'E': 2, 'B': 1})
@@ -937,7 +937,7 @@ after removing Counter({'A': 8, '2B@45': 1})
 after adding Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'A': 8, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac850640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ec2880>)
 contains Counter({'E': 2}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 after removing Counter({'A': 8, 'B': 3})
 after removing Counter({'A': 8, 'B': 2})
@@ -950,7 +950,7 @@ contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) 
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 contains Counter({'E': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -964,7 +964,7 @@ after removing Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after removing Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after adding Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1})
 contains Counter({'A': 3}) in Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -978,7 +978,7 @@ after removing Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after removing Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after adding Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1})
 contains Counter({'A': 5}) in Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -995,7 +995,7 @@ contains Counter({'B': 2}) in Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D':
 after removing Counter({'B': 3, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1})
 after removing Counter({'B': 3, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1})
 after adding Counter({'B': 3, 'C': 3, 'E': 3, '3A@130': 3, 'D': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1012,7 +1012,7 @@ contains Counter({'E': 2}) in Counter({'B': 5, 'C': 3, 'E': 3, '3A@130': 3, 'D':
 after removing Counter({'B': 5, 'C': 3, '3A@130': 3, 'D': 1, 'E': 1})
 after removing Counter({'B': 4, 'C': 3, '3A@130': 3, 'D': 1, 'E': 1})
 after adding Counter({'B': 4, 'C': 3, '3A@130': 3, 'D': 1, 'E': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1023,7 +1023,7 @@ after removing Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, 'D': 1, '3A@130': 1})
 after adding Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 contains Counter({'A': 5}) in Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1037,7 +1037,7 @@ contains Counter({'B': 2}) in Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, '3A@130':
 after removing Counter({'A': 3, 'B': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after removing Counter({'A': 3, 'B': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1})
 after adding Counter({'A': 3, 'B': 3, 'C': 3, 'E': 3, '3A@130': 2, 'D': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1051,7 +1051,7 @@ contains Counter({'E': 2}) in Counter({'B': 5, 'A': 3, 'C': 3, 'E': 3, '3A@130':
 after removing Counter({'B': 5, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1})
 after removing Counter({'B': 4, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1})
 after adding Counter({'B': 4, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1068,7 +1068,7 @@ contains Counter({'B': 2}) in Counter({'A': 3, 'B': 3, 'C': 3, 'E': 3, '3A@130':
 after removing Counter({'A': 3, 'C': 3, 'E': 3, '3A@130': 2, 'B': 1, 'D': 1, '2B@45': 1})
 after removing Counter({'A': 3, 'C': 3, 'E': 3, '3A@130': 2, 'B': 1, 'D': 1, '2B@45': 1})
 after adding Counter({'A': 3, 'C': 3, 'E': 3, '3A@130': 2, '2B@45': 2, 'B': 1, 'D': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1085,7 +1085,7 @@ contains Counter({'E': 2}) in Counter({'A': 3, 'B': 3, 'C': 3, 'E': 3, '3A@130':
 after removing Counter({'A': 3, 'B': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1, '2B@45': 1})
 after removing Counter({'A': 3, 'C': 3, 'B': 2, '3A@130': 2, 'D': 1, 'E': 1, '2B@45': 1})
 after adding Counter({'A': 3, 'C': 3, 'B': 2, '3A@130': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1099,7 +1099,7 @@ after removing Counter({'B': 5, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1})
 after removing Counter({'B': 4, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1})
 after adding Counter({'B': 4, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'B': 4, 'A': 3, 'C': 3, '3A@130': 2, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1110,7 +1110,7 @@ after removing Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1})
 after adding Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1})
 contains Counter({'A': 5}) in Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1124,7 +1124,7 @@ contains Counter({'B': 2}) in Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '
 after removing Counter({'B': 3, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1})
 after removing Counter({'B': 3, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1})
 after adding Counter({'B': 3, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1138,7 +1138,7 @@ contains Counter({'E': 2}) in Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '
 after removing Counter({'B': 5, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1})
 after removing Counter({'B': 4, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1})
 after adding Counter({'B': 4, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1155,7 +1155,7 @@ contains Counter({'B': 2}) in Counter({'B': 3, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '
 after removing Counter({'C': 3, 'E': 3, 'A': 1, 'B': 1, 'D': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'C': 3, 'E': 3, 'A': 1, 'B': 1, 'D': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'C': 3, 'E': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, '3A@130': 1, '5A@200': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1172,7 +1172,7 @@ contains Counter({'E': 2}) in Counter({'B': 3, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '
 after removing Counter({'B': 3, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'C': 3, 'B': 2, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'C': 3, 'B': 2, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1186,7 +1186,7 @@ after removing Counter({'B': 5, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A
 after removing Counter({'B': 4, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1})
 after adding Counter({'B': 4, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'B': 4, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1200,7 +1200,7 @@ after removing Counter({'A': 6, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '3A@130': 1, '2B
 after removing Counter({'A': 6, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '3A@130': 1, '2B@45': 1})
 after adding Counter({'A': 6, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1, '3A@130': 1})
 contains Counter({'B': 2}) in Counter({'A': 6, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1, '3A@130': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1217,7 +1217,7 @@ contains Counter({'E': 2}) in Counter({'A': 6, 'C': 3, 'E': 3, '2B@45': 2, 'B': 
 after removing Counter({'A': 6, 'C': 3, '2B@45': 2, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1})
 after removing Counter({'A': 6, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '3A@130': 1})
 after adding Counter({'A': 6, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '3A@130': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1231,7 +1231,7 @@ after removing Counter({'A': 6, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '3A@130': 1, '2B
 after removing Counter({'A': 6, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '3A@130': 1, '2B@45': 1})
 after adding Counter({'A': 6, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '3A@130': 1, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 6, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '3A@130': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a520>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edefd0>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1})
@@ -1242,7 +1242,7 @@ after removing Counter({'A': 6, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '3A@130': 1})
 after adding Counter({'A': 6, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '3A@130': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 6, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '3A@130': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'A': 6, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '3A@130': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1250,7 +1250,7 @@ after adding Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1})
 contains Counter({'A': 5}) in Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1261,7 +1261,7 @@ contains Counter({'B': 2}) in Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '
 after removing Counter({'A': 4, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1})
 after removing Counter({'A': 4, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1})
 after adding Counter({'A': 4, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '5A@200': 1, '2B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1272,7 +1272,7 @@ contains Counter({'E': 2}) in Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1, '
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1})
 after removing Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1})
 after adding Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1286,7 +1286,7 @@ contains Counter({'B': 2}) in Counter({'A': 4, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '
 after removing Counter({'A': 4, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'A': 4, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 4, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1, '5A@200': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1300,7 +1300,7 @@ contains Counter({'E': 2}) in Counter({'A': 4, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '
 after removing Counter({'A': 4, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1})
 after removing Counter({'A': 4, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 4, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1311,7 +1311,7 @@ after removing Counter({'B': 5, 'A': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1})
 after removing Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1})
 after adding Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1325,7 +1325,7 @@ after removing Counter({'A': 4, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '5A@200': 1, '2B
 after removing Counter({'A': 4, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 4, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1, '5A@200': 1})
 contains Counter({'B': 2}) in Counter({'A': 4, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1, '5A@200': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1342,7 +1342,7 @@ contains Counter({'E': 2}) in Counter({'A': 4, 'C': 3, 'E': 3, '2B@45': 2, 'B': 
 after removing Counter({'A': 4, 'C': 3, '2B@45': 2, 'B': 1, 'D': 1, 'E': 1, '5A@200': 1})
 after removing Counter({'A': 4, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '5A@200': 1})
 after adding Counter({'A': 4, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1356,7 +1356,7 @@ after removing Counter({'A': 4, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2B
 after removing Counter({'A': 4, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1})
 after adding Counter({'A': 4, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 4, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a580>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edeb80>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'B': 5, 'A': 4, 'C': 3, 'E': 3, 'D': 1})
@@ -1367,7 +1367,7 @@ after removing Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1})
 after adding Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'E': 2}) in Counter({'A': 4, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>)
 contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
@@ -1378,7 +1378,7 @@ after removing Counter({'A': 9, 'C': 3, 'E': 3, 'B': 1, 'D': 1, '2B@45': 1})
 after adding Counter({'A': 9, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1})
 contains Counter({'B': 2}) in Counter({'A': 9, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 9, 'C': 3, 'E': 3, '2B@45': 2, 'B': 1, 'D': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
@@ -1392,7 +1392,7 @@ contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, 'E': 3, '2B@45': 2, 'B': 
 after removing Counter({'A': 9, 'C': 3, '2B@45': 2, 'B': 1, 'D': 1, 'E': 1})
 after removing Counter({'A': 9, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1})
 after adding Counter({'A': 9, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '2E+1B@45': 1})
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
@@ -1406,39 +1406,11 @@ after removing Counter({'A': 9, 'C': 3, '2B@45': 2, 'B': 1, 'D': 1, 'E': 1})
 after removing Counter({'A': 9, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1})
 after adding Counter({'A': 9, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '2E+1B@45': 1})
 contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, '2B@45': 2, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a5e0>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0ede430>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
 contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after adding Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '2B@45': 1})
-contains Counter({'E': 2}) in Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '2B@45': 1}) is True
-after removing Counter({'A': 9, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2B@45': 1})
-after removing Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1})
-after adding Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1})
-contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1}) is False
-testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>, <solutions.CHK.checkout_solution.Offer object at 0x7f80ac87a640>)
-contains Counter({'E': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
-after removing Counter({'A': 9, 'B': 5, 'C': 3, 'D': 1, 'E': 1})
-after removing Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1})
-after adding Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1})
-contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
-id = CHK_R2_001, req = checkout("ABCDECBAABCABBAAAEEAA"), resp = 680
-Stopping client
-Notify round "CHK_R2", event "deploy"
---------------------------------------------
 
-[31mResult is: FAILED[m
-Some requests have failed (2/40). Here are some of them:
- - {"method":"checkout","params":["BBBB"],"id":"CHK_R2_037"}, expected: 90, got: 105
- - {"method":"checkout","params":["ABCDECBAABCABBAAAEEAA"],"id":"CHK_R2_001"}, expected: 665, got: 680
-[31mYou have received a penalty of: 10 min[m
-[34mThe round will restart now[m
-
-[33mLook at your failed trials and edit your code. When you've finished, deploy your code with "deploy"[m
-
-Challenge description saved to file: challenges/CHK_R2.txt.
 
 

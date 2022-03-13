@@ -12,6 +12,9 @@ class Offer:
         self.base_items = base_items
         self.free_items = free_items
 
+    def __str__(self) -> str:
+        return str(self.base_items)
+
 class Basket:
     def __init__(self, prices: Dict[str, int], items: Counter = Counter()):
         self.items = items
@@ -117,4 +120,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

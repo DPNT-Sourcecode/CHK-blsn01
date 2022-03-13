@@ -3,7 +3,7 @@ from typing import List, Callable, Set
 
 
 class Offer:
-    def __init__(self, name: str, sku_set: Dict[str, int]):
+    def __init__(self, name: str, sku_set: Counter):
         self.name = name
         self.sku_set = sku_set
 
@@ -21,7 +21,7 @@ class Basket:
 
         # check offers
         for offer in self.offers:
-            tmp_counter = self.counter
+            tmp_counter = self.counter & offer.sku_set
         
         return True
     
@@ -61,5 +61,6 @@ def checkout(skus) -> int:
             return -1
 
     return basket.value()
+
 
 

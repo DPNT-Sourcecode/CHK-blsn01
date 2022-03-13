@@ -22,7 +22,7 @@ class Basket:
 
         # Apply offers
         for offer in self.offers:
-            if self.items & offer.items:  # check if offer can be applied
+            if (self.items & offer.items == offer.items):  # check if offer can be applied
                 self.items -= offer.items
                 self.items += Counter()  # clean up
                 self.items[offer.name] += 1
@@ -55,6 +55,7 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 
 
 

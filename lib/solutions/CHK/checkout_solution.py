@@ -46,11 +46,16 @@ def checkout(skus):
              'C' : 20,
              'D' : 15,
         '3A@130' : 130,
-        '2B@45'  : 45
+        '2B@45'  : 45,
+    }
+    offers = {
+        Offer('3A@130', { 'A' : 3 }),
+        Offer('2A@45', { 'B' : 2 }),
     }
     basket = Basket(sku_prices)
 
     for sku in skus:
+
 
 
 

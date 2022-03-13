@@ -32,6 +32,12 @@ class Basket:
                 return False
             self.paid_items[sku] += 1
         return True
+
+    def contains(self, items: Counter) -> bool:
+        return (self.paid_items & items) == items
+    
+    def remove(self, items: Counter) -> None:
+        self.paid_items
     
     def value(self) -> int:
         """
@@ -81,11 +87,3 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
-
-
-
-
-
-
-
-

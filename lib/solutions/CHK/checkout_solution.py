@@ -26,7 +26,7 @@ class Basket:
 
     def update(self, skus: str) -> bool:
         """
-        Replace basket items.
+        Replace basket items with a list.
         """
         self.items = Counter()
         for sku in skus:
@@ -36,10 +36,16 @@ class Basket:
         return True
 
     def contains(self, items: Counter) -> bool:
+        """
+        Check if all the given items exist in the basket.
+        """
         res = (self.items & items) == items
         return res
     
     def remove(self, items: Counter) -> None:
+        """
+        Remove list of items from basket.
+        """
         self.items -= items
         self.items += Counter() # cleanup
     
@@ -57,6 +63,7 @@ class OfferManager:
         best_value = math.inf
         best_basket = None
 
+        # keep only applicable offers
         offers_applicable = []
         for offer in offers:
             if basket.contains(offer.base_items):
@@ -65,6 +72,7 @@ class OfferManager:
         if not offers_applicable:
             return basket
 
+        # sort by offer size
         offers_applicable.sort(key=lambda x: len(x.base_items & basket.items), reverse=True)
 
         for offer in offers_applicable:
@@ -72,16 +80,13 @@ class OfferManager:
                 basket.remove(offer.base_items)
                 basket.remove(offer.free_items)
                 basket.add(offer.name)
-
+                # update best basket so far
                 value = basket.value()
                 if value < best_value:
                     best_value = value
                     best_basket = basket
 
         return best_basket
-
-    def final_item_list(basket: Basket):
-        pass
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -154,6 +159,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

@@ -1,5 +1,6 @@
 from collections import Counter
 from typing import List, Dict
+from itertools import permutations
 
 
 class Offer:
@@ -14,11 +15,17 @@ class Basket:
         self.sku_prices = sku_prices
 
     def add(self, sku: str) -> bool:
+        """
+        Add items to basket.
+        """
         if sku not in self.sku_prices:
             return False
         self.items[sku] += 1
 
     def update(self, skus: str) -> bool:
+        """
+        Replace basket items.
+        """
         self.items = Counter()
         for sku in skus:
             if sku not in self.sku_prices:
@@ -27,6 +34,9 @@ class Basket:
         return True
     
     def value(self) -> int:
+        """
+        Return value of basket.
+        """
         return sum([self.sku_prices[sku] * self.items[sku] for sku in self.items])
 
 class OfferManager:
@@ -34,7 +44,9 @@ class OfferManager:
         self.offers = offers
 
     def apply(self, basket: Basket) -> Basket:
-        # Apply offers
+        """
+        Apply offers and return new basket.
+        """
         for offer in self.offers:
             if (self.items & offer.base_items) == offer.base_items:  # check if offer can be applied
                 self.items -= offer.base_items
@@ -68,7 +80,10 @@ def checkout(skus: str) -> int:
     if not basket.update(skus):
         return -1
 
+    basket = OfferManager.apply(offers)
+
     return basket.value()
+
 
 
 

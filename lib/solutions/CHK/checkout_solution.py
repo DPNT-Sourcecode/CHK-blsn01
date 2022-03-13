@@ -1,6 +1,6 @@
 from collections import Counter
-from typing import List, Dict
 from itertools import permutations
+from typing import List, Dict
 
 
 class Offer:
@@ -47,11 +47,13 @@ class OfferManager:
         """
         Apply offers and return new basket.
         """
-        for offer in self.offers:
-            if (self.items & offer.base_items) == offer.base_items:  # check if offer can be applied
-                self.items -= offer.base_items
-                self.items += Counter()  # clean up
-                self.items[offer.name] += 1
+        best_value = math.inf
+        for offer_perm in permutations(self.offers):
+            for offer in offer_perm:
+                if (self.items & offer.base_items) == offer.base_items:  # check if offer can be applied
+                    self.items -= offer.base_items
+                    self.items += Counter()  # clean up
+                    self.items[offer.name] += 1
 
 
 # noinspection PyUnusedLocal
@@ -69,10 +71,10 @@ def checkout(skus: str) -> int:
         '2E+1B@45' : 80,
     }
     offers = [
-        Offer('3A@130', Counter(base_items={'A': 3})),
-        Offer('5A@200', Counter(base_items={'A': 5})),
-        Offer('2B@45', Counter(base_items={'B': 2})),
-        Offer('2E+1B@45', Counter(base_items={'E': 2}, free_items={'B': 1})),
+        Offer('3A@130', base_items=Counter({'A': 3})),
+        Offer('5A@200', base_items=Counter({'A': 5})),
+        Offer('2B@45', base_items=Counter({'B': 2})),
+        Offer('2E+1B@45', base_items=Counter({'E': 2}, free_items=Counter({'B': 1}))),
     ]
 
     basket = Basket(sku_prices)
@@ -83,6 +85,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(offers)
 
     return basket.value()
+
 
 
 

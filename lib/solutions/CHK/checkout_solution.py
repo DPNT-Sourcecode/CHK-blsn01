@@ -160,10 +160,3 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
-
-
-
-
-
-
-

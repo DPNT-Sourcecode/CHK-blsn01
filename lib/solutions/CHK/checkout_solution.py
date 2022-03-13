@@ -66,6 +66,9 @@ class OfferManager:
             if basket_og.contains(offer.base_items):
                 offers_applicable.append(offer)
 
+        if not offers_applicable:
+            return basket_og
+
         for offer_comb in combinations_with_replacement(offers_applicable, len(offers_applicable)):
             print(f'testing comb {offer_comb}')
             basket = copy.deepcopy(basket_og)
@@ -113,4 +116,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

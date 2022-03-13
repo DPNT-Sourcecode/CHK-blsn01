@@ -31,7 +31,7 @@ class Basket:
         Replace basket items.
         """
         self.items = Counter()
-       @sku in skus:
+        for sku in skus:
             if sku not in self.prices:
                 return False
             self.items[sku] += 1
@@ -51,7 +51,7 @@ class Basket:
         """
         Return value of basket.
         """
-        return sum([self.prices[sku] * self.items[sku]@sku in self.items])
+        return sum([self.prices[sku] * self.items[sku] for sku in self.items])
 
 class OfferManager:
     def apply(basket_og: Basket, offers: List[Offer]) -> Basket:
@@ -62,18 +62,18 @@ class OfferManager:
         best_basket = None
 
         offers_applicable = []
-       @offer in offers:
+        for offer in offers:
             if basket_og.contains(offer.base_items):
                 offers_applicable.append(offer)
 
         if not offers_applicable:
             return basket_og
 
-       @offer_list in permutations(offers_applicable):
+        for offer_list in permutations(offers_applicable):
             print(f'testing offer list {offer_list}')
             basket = copy.deepcopy(basket_og)
 
-           @offer in offer_list:
+            for offer in offer_list:
                 while basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
                     basket.remove(offer.free_items)
@@ -160,6 +160,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

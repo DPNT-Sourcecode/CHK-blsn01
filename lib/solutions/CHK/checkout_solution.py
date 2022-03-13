@@ -58,6 +58,8 @@ class OfferManager:
         best_value = math.inf
         best_basket = None
 
+        print(f'num permutations: {len(list(permutations(offers)))}')
+
         for offer_perm in permutations(offers):
             basket = Basket(basket_og.prices, basket_og.items)
 
@@ -104,6 +106,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

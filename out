@@ -8,7 +8,7 @@ Your progress (2/3):
  [32m✓[m    └── HLO_R2  - [32mcompleted in [m1 min (+0 min penalty)
  [34m@[m CHK (5 rounds) - official - Supermarket checkout
  [32m✓[m    ├── CHK_R1  - [32mcompleted in [m75 min (+30 min penalty)
- [34m>[m    ├── CHK_R2  - [34mrunning for [m74 min [31m(+30 min penalty)[m
+ [34m>[m    ├── CHK_R2  - [34mrunning for [m82 min [31m(+40 min penalty)[m
       ├── CHK_R3  - not started
       ├── CHK_R4  - not started
       └── CHK_R5  - not started
@@ -20,6 +20,7 @@ Your progress (2/3):
 Selected action is: deploy
 Starting client
 Waiting for requests
+num permutations: 24
 contains Counter({'A': 3}) in Counter() is False
 contains Counter({'A': 5}) in Counter() is False
 contains Counter({'B': 2}) in Counter() is False
@@ -117,6 +118,7 @@ contains Counter({'B': 2}) in Counter() is False
 contains Counter({'A': 5}) in Counter() is False
 contains Counter({'A': 3}) in Counter() is False
 id = CHK_R2_002, req = checkout(""), resp = 0
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1}) is False
@@ -214,6 +216,7 @@ contains Counter({'B': 2}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 id = CHK_R2_003, req = checkout("A"), resp = 50
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'B': 1}) is False
@@ -311,6 +314,7 @@ contains Counter({'B': 2}) in Counter({'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1}) is False
 contains Counter({'A': 3}) in Counter({'B': 1}) is False
 id = CHK_R2_004, req = checkout("B"), resp = 30
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'C': 1}) is False
 contains Counter({'A': 5}) in Counter({'C': 1}) is False
 contains Counter({'B': 2}) in Counter({'C': 1}) is False
@@ -408,6 +412,7 @@ contains Counter({'B': 2}) in Counter({'C': 1}) is False
 contains Counter({'A': 5}) in Counter({'C': 1}) is False
 contains Counter({'A': 3}) in Counter({'C': 1}) is False
 id = CHK_R2_005, req = checkout("C"), resp = 20
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'D': 1}) is False
 contains Counter({'A': 5}) in Counter({'D': 1}) is False
 contains Counter({'B': 2}) in Counter({'D': 1}) is False
@@ -505,6 +510,7 @@ contains Counter({'B': 2}) in Counter({'D': 1}) is False
 contains Counter({'A': 5}) in Counter({'D': 1}) is False
 contains Counter({'A': 3}) in Counter({'D': 1}) is False
 id = CHK_R2_006, req = checkout("D"), resp = 15
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 1}) is False
 contains Counter({'B': 2}) in Counter({'E': 1}) is False
@@ -606,6 +612,7 @@ id = CHK_R2_008, req = checkout("a"), resp = -1
 id = CHK_R2_009, req = checkout("-"), resp = -1
 id = CHK_R2_010, req = checkout("ABCa"), resp = -1
 id = CHK_R2_011, req = checkout("AxA"), resp = -1
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) is False
@@ -703,6 +710,7 @@ contains Counter({'B': 2}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) 
 contains Counter({'A': 5}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1, 'B': 1, 'C': 1, 'D': 1, 'E': 1}) is False
 id = CHK_R2_012, req = checkout("ABCDE"), resp = 155
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1}) is False
@@ -800,6 +808,7 @@ contains Counter({'B': 2}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 id = CHK_R2_013, req = checkout("A"), resp = 50
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 2}) is False
 contains Counter({'A': 5}) in Counter({'A': 2}) is False
 contains Counter({'B': 2}) in Counter({'A': 2}) is False
@@ -897,6 +906,7 @@ contains Counter({'B': 2}) in Counter({'A': 2}) is False
 contains Counter({'A': 5}) in Counter({'A': 2}) is False
 contains Counter({'A': 3}) in Counter({'A': 2}) is False
 id = CHK_R2_014, req = checkout("AA"), resp = 100
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 3}) is True
 contains Counter({'A': 5}) in Counter({'3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'3A@130': 1}) is False
@@ -994,6 +1004,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 1}) is False
 id = CHK_R2_015, req = checkout("AAA"), resp = 130
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 4}) is True
 contains Counter({'A': 5}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1}) is False
@@ -1091,6 +1102,7 @@ contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1, '3A@130': 1}) is False
 id = CHK_R2_016, req = checkout("AAAA"), resp = 180
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1}) is False
@@ -1188,6 +1200,7 @@ contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 2, '3A@130': 1}) is False
 id = CHK_R2_017, req = checkout("AAAAA"), resp = 230
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 contains Counter({'A': 5}) in Counter({'A': 3, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 3, '3A@130': 1}) is False
@@ -1285,6 +1298,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 2}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 2}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 2}) is False
 id = CHK_R2_018, req = checkout("AAAAAA"), resp = 260
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 7}) is True
 contains Counter({'A': 5}) in Counter({'A': 4, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 4, '3A@130': 1}) is False
@@ -1382,6 +1396,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 2, 'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 2, 'A': 1}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 2, 'A': 1}) is False
 id = CHK_R2_019, req = checkout("AAAAAAA"), resp = 310
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 8}) is True
 contains Counter({'A': 5}) in Counter({'A': 5, '3A@130': 1}) is True
 contains Counter({'B': 2}) in Counter({'3A@130': 1, '5A@200': 1}) is False
@@ -1479,6 +1494,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 1, '5A@200': 1}) is False
 id = CHK_R2_020, req = checkout("AAAAAAAA"), resp = 330
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 9}) is True
 contains Counter({'A': 5}) in Counter({'A': 6, '3A@130': 1}) is True
 contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1, '5A@200': 1}) is False
@@ -1576,6 +1592,7 @@ contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1, '5A@200': 1}) is Fal
 contains Counter({'A': 5}) in Counter({'A': 1, '3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1, '3A@130': 1, '5A@200': 1}) is False
 id = CHK_R2_021, req = checkout("AAAAAAAAA"), resp = 380
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 10}) is True
 contains Counter({'A': 5}) in Counter({'A': 7, '3A@130': 1}) is True
 contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1, '5A@200': 1}) is False
@@ -1673,6 +1690,7 @@ contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1, '5A@200': 1}) is Fal
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1, '5A@200': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 2, '3A@130': 1, '5A@200': 1}) is False
 id = CHK_R2_022, req = checkout("AAAAAAAAAA"), resp = 430
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 2}) is False
@@ -1770,6 +1788,7 @@ contains Counter({'B': 2}) in Counter({'2E+1B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'2E+1B@45': 1}) is False
 id = CHK_R2_023, req = checkout("EE"), resp = 80
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 2, 'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 2, 'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'E': 2, 'B': 1}) is False
@@ -1867,6 +1886,7 @@ contains Counter({'B': 2}) in Counter({'B': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'B': 1, '2E+1B@45': 1}) is False
 id = CHK_R2_024, req = checkout("EEB"), resp = 110
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 3, 'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 3, 'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'E': 3, 'B': 1}) is False
@@ -1964,6 +1984,7 @@ contains Counter({'B': 2}) in Counter({'E': 1, 'B': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'E': 1, 'B': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'E': 1, 'B': 1, '2E+1B@45': 1}) is False
 id = CHK_R2_025, req = checkout("EEEB"), resp = 150
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
@@ -2061,6 +2082,7 @@ contains Counter({'B': 2}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 id = CHK_R2_026, req = checkout("EEEEBB"), resp = 205
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'E': 4, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'E': 4, 'B': 2}) is True
@@ -2158,6 +2180,7 @@ contains Counter({'B': 2}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'2E+1B@45': 2, '2B@45': 1}) is False
 id = CHK_R2_027, req = checkout("BEBEEE"), resp = 205
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1}) is False
@@ -2255,6 +2278,7 @@ contains Counter({'B': 2}) in Counter({'A': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1}) is False
 id = CHK_R2_028, req = checkout("A"), resp = 50
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 2}) is False
 contains Counter({'A': 5}) in Counter({'A': 2}) is False
 contains Counter({'B': 2}) in Counter({'A': 2}) is False
@@ -2352,6 +2376,7 @@ contains Counter({'B': 2}) in Counter({'A': 2}) is False
 contains Counter({'A': 5}) in Counter({'A': 2}) is False
 contains Counter({'A': 3}) in Counter({'A': 2}) is False
 id = CHK_R2_029, req = checkout("AA"), resp = 100
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 3}) is True
 contains Counter({'A': 5}) in Counter({'3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'3A@130': 1}) is False
@@ -2449,6 +2474,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 1}) is False
 id = CHK_R2_030, req = checkout("AAA"), resp = 130
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 4}) is True
 contains Counter({'A': 5}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1}) is False
@@ -2546,6 +2572,7 @@ contains Counter({'B': 2}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 1, '3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 1, '3A@130': 1}) is False
 id = CHK_R2_031, req = checkout("AAAA"), resp = 180
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 5}) is True
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1}) is False
@@ -2643,6 +2670,7 @@ contains Counter({'B': 2}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'A': 5}) in Counter({'A': 2, '3A@130': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 2, '3A@130': 1}) is False
 id = CHK_R2_032, req = checkout("AAAAA"), resp = 230
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 6}) is True
 contains Counter({'A': 5}) in Counter({'A': 3, '3A@130': 1}) is False
 contains Counter({'B': 2}) in Counter({'A': 3, '3A@130': 1}) is False
@@ -2740,6 +2768,7 @@ contains Counter({'B': 2}) in Counter({'3A@130': 2}) is False
 contains Counter({'A': 5}) in Counter({'3A@130': 2}) is False
 contains Counter({'A': 3}) in Counter({'3A@130': 2}) is False
 id = CHK_R2_033, req = checkout("AAAAAA"), resp = 260
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1}) is False
 contains Counter({'B': 2}) in Counter({'B': 1}) is False
@@ -2837,6 +2866,7 @@ contains Counter({'B': 2}) in Counter({'B': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1}) is False
 contains Counter({'A': 3}) in Counter({'B': 1}) is False
 id = CHK_R2_034, req = checkout("B"), resp = 30
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'B': 2}) is True
@@ -2934,6 +2964,7 @@ contains Counter({'B': 2}) in Counter({'2B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'2B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'2B@45': 1}) is False
 id = CHK_R2_035, req = checkout("BB"), resp = 45
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'B': 3}) is False
 contains Counter({'A': 5}) in Counter({'B': 3}) is False
 contains Counter({'B': 2}) in Counter({'B': 3}) is True
@@ -3031,6 +3062,7 @@ contains Counter({'B': 2}) in Counter({'B': 1, '2B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'B': 1, '2B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'B': 1, '2B@45': 1}) is False
 id = CHK_R2_036, req = checkout("BBB"), resp = 75
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'B': 4}) is False
 contains Counter({'A': 5}) in Counter({'B': 4}) is False
 contains Counter({'B': 2}) in Counter({'B': 4}) is True
@@ -3128,6 +3160,7 @@ contains Counter({'B': 2}) in Counter({'2B@45': 2}) is False
 contains Counter({'A': 5}) in Counter({'2B@45': 2}) is False
 contains Counter({'A': 3}) in Counter({'2B@45': 2}) is False
 id = CHK_R2_037, req = checkout("BBBB"), resp = 90
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is False
 contains Counter({'A': 5}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is False
 contains Counter({'B': 2}) in Counter({'A': 2, 'B': 2, 'C': 2, 'D': 2, 'E': 2}) is True
@@ -3225,6 +3258,7 @@ contains Counter({'B': 2}) in Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1, '2E+1
 contains Counter({'A': 5}) in Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'A': 2, 'C': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1}) is False
 id = CHK_R2_038, req = checkout("ABCDEABCDE"), resp = 295
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is False
 contains Counter({'A': 5}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is False
 contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, 'E': 2, 'B': 2}) is True
@@ -3322,6 +3356,7 @@ contains Counter({'B': 2}) in Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1, '2E+1
 contains Counter({'A': 5}) in Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'C': 2, 'A': 2, 'D': 2, '2B@45': 1, '2E+1B@45': 1}) is False
 id = CHK_R2_039, req = checkout("CCADDEEBBA"), resp = 295
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 8, 'B': 3, 'E': 2}) is True
 contains Counter({'A': 5}) in Counter({'A': 5, 'B': 3, 'E': 2, '3A@130': 1}) is True
 contains Counter({'B': 2}) in Counter({'B': 3, 'E': 2, '3A@130': 1, '5A@200': 1}) is True
@@ -3419,6 +3454,7 @@ contains Counter({'B': 2}) in Counter({'B': 1, '3A@130': 1, '5A@200': 1, '2B@45'
 contains Counter({'A': 5}) in Counter({'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 3}) in Counter({'B': 1, '3A@130': 1, '5A@200': 1, '2B@45': 1, '2E+1B@45': 1}) is False
 id = CHK_R2_040, req = checkout("AAAAAEEBAAABB"), resp = 485
+num permutations: 24
 contains Counter({'A': 3}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
 contains Counter({'A': 5}) in Counter({'A': 6, 'B': 5, 'C': 3, 'E': 3, 'D': 1, '3A@130': 1}) is True
 contains Counter({'B': 2}) in Counter({'B': 5, 'C': 3, 'E': 3, 'A': 1, 'D': 1, '3A@130': 1, '5A@200': 1}) is True
@@ -3488,47 +3524,5 @@ contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 
 contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
 contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'E': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'B': 2}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 5}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-contains Counter({'A': 3}) in Counter({'C': 3, '2B@45': 2, 'A': 1, 'B': 1, 'D': 1, 'E': 1, '3A@130': 1, '5A@200': 1, '2E+1B@45': 1}) is False
-id = CHK_R2_001, req = checkout("ABCDECBAABCABBAAAEEAA"), resp = 695
-Stopping client
-Notify round "CHK_R2", event "deploy"
---------------------------------------------
 
-[31mResult is: FAILED[m
-Some requests have failed (14/40). Here are some of them:
- - {"method":"checkout","params":["AAAAA"],"id":"CHK_R2_017"}, expected: 200, got: 230
- - {"method":"checkout","params":["AAAAAA"],"id":"CHK_R2_018"}, expected: 250, got: 260
- - {"method":"checkout","params":["AAAAAAA"],"id":"CHK_R2_019"}, expected: 300, got: 310
-[31mYou have received a penalty of: 10 min[m
-[34mThe round will restart now[m
-
-[33mLook at your failed trials and edit your code. When you've finished, deploy your code with "deploy"[m
-
-Challenge description saved to file: challenges/CHK_R2.txt.
 

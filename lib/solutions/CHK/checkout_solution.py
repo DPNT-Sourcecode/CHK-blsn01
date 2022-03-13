@@ -61,9 +61,3 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
-
-
-
-
-
-

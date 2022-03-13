@@ -34,7 +34,7 @@ class Basket:
 
 # noinspection PyUnusedLocal
 # skus = unicode string
-def checkout(skus) -> int:
+def checkout(skus: str) -> int:
     sku_prices = {
              'A' : 50,
              'B' : 30,
@@ -44,8 +44,8 @@ def checkout(skus) -> int:
         '2B@45'  : 45,
     }
     offers = [
-        Offer('3A@130', { 'A' : 3 }),
-        Offer('2A@45', { 'B' : 2 }),
+        Offer('3A@130', Counter({ 'A' : 3 })),
+        Offer('2B@45', Counter({ 'B' : 2 })),
     ]
 
     basket = Basket(sku_prices, offers)
@@ -55,6 +55,7 @@ def checkout(skus) -> int:
             return -1
 
     return basket.value()
+
 
 
 

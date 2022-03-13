@@ -2,21 +2,16 @@ from collections import Counter
 from typing import List, Callable, Set
 
 
-class SKU:
-    def __init__(self, name: str, price: int):
-        self.name = name
-        self.price = price
-
 class Offer:
     def __init__(self, name: str, sku_set: Dict[str, int], price: int):
         self.name = names
         self.sku_set = sku_set
-        self.price = price
 
 class Basket:
-    def __init__(self, valid_skus: Set[str], offers: List[Offer]):
+    def __init__(self, valid_skus: Set[str], prices: Dict[str, int], offers: List[Offer]):
         self.counter = Counter()
         self.valid_skus = valid_skus
+        self.prices = prices
         self.offers = offers
 
     def put(sku: str) -> bool:
@@ -47,6 +42,7 @@ def checkout(skus):
     basket = Basket()
 
     for sku in skus:
+
 
 
 

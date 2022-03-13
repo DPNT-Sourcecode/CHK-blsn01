@@ -63,7 +63,7 @@ class OfferManager:
 
         offers_applicable = []
         for offer in offers:
-            if basket.contains(offer.base_items):
+            if basket_og.contains(offer.base_items):
                 offers_applicable.append(offer)
 
         for offer_comb in combinations_with_replacement(offers_applicable, len(offers_applicable)):
@@ -113,9 +113,3 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
-
-
-
-
-
-

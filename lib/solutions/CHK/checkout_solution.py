@@ -2,6 +2,12 @@ from collections import Counter
 from typing import List, Callable, Set
 
 
+class SKU:
+    def __init__(self, name: str):
+        self.name = name
+
+class 
+
 class Basket:
     def __init__(self, skus: Dict[str, int], offers: List[Callable]):
         self.counter = Counter()
@@ -34,3 +40,4 @@ def checkout(skus):
         if counter['B'] == 2:
             counter['B'] -= 2
             counter['2B'] += 1
+

@@ -10,15 +10,15 @@ class Offer:
         self.free_items = free_items
 
 class Basket:
-    def __init__(self, sku_prices: Dict[str, int]):
+    def __init__(self, prices: Dict[str, int]):
         self.items = Counter()
-        self.sku_prices = sku_prices
+        self.prices = prices
 
     def add(self, sku: str) -> bool:
         """
         Add items to basket.
         """
-        if sku not in self.sku_prices:
+        if sku not in self.prices:
             return False
         self.items[sku] += 1
 
@@ -28,7 +28,7 @@ class Basket:
         """
         self.items = Counter()
         for sku in skus:
-            if sku not in self.sku_prices:
+            if sku not in self.prices:
                 return False
             self.items[sku] += 1
         return True
@@ -44,7 +44,7 @@ class Basket:
         """
         Return value of basket.
         """
-        return sum([self.sku_prices[sku] * self.items[sku] for sku in self.paid_items])
+        return sum([self.prices[sku] * self.items[sku] for sku in self.items])
 
 class OfferManager:
     def apply(basket: Basket, offers: List[Offer]) -> Basket:
@@ -54,9 +54,10 @@ class OfferManager:
         best_value = math.inf
         for offer_perm in permutations(offers):
             for offer in offer_perm:
-                if basket.contains(offer.base_items):  # check if offer can be applied
-                    basket.remove(offer.base_items)
-                    basket.add(offer.name)
+                b = basket.copy()
+                if b.contains(offer.base_items):  # check if offer can be applied
+                    b.remove(offer.base_items)
+                    b.add(offer.name)
             best_value = min(best_value, basket.value())
 
     def final_item_list(basket: Basket):
@@ -65,7 +66,7 @@ class OfferManager:
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus: str) -> int:
-    sku_prices = {
+    prices = {
         'A' : 50,
         'B' : 30,
         'C' : 20,
@@ -83,12 +84,13 @@ def checkout(skus: str) -> int:
         Offer('2E+1B@45', base_items=Counter({'E': 2}, free_items=Counter({'B': 1}))),
     ]
 
-    basket = Basket(sku_prices)
+    basket = Basket(prices)
     if not basket.update(skus):
         return -1
 
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 

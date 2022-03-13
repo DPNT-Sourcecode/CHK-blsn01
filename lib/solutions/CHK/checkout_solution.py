@@ -3,10 +3,15 @@ from typing import List, Callable, Set
 
 
 class SKU:
-    def __init__(self, name: str):
+    def __init__(self, name: str, price: int):
         self.name = name
+        self.price = price
 
-class 
+class Offer:
+    def __init__(self, name: str, sku_set: Dict[str, int], price: int):
+        self.name = names
+        self.sku_set = sku_set
+        self.price = price
 
 class Basket:
     def __init__(self, skus: Dict[str, int], offers: List[Callable]):
@@ -42,6 +47,7 @@ def checkout(skus):
     basket = Basket()
 
     for sku in skus:
+
 
 
 

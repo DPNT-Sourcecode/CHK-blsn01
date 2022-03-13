@@ -1,5 +1,5 @@
 from collections import Counter
-from typing import List, Callable, Set
+from typing import List, Dict
 
 
 class Offer:
@@ -8,7 +8,7 @@ class Offer:
         self.items = items
 
 class Basket:
-    def __init__(self, sku_prices: Set[str], offers: List[Offer]):
+    def __init__(self, sku_prices: Dict[str, int], offers: List[Offer]):
         self.items = Counter()
         self.sku_prices = sku_prices
         self.offers = offers
@@ -22,7 +22,7 @@ class Basket:
 
         # Apply offers
         for offer in self.offers:
-            if self.items & offer.items
+            if self.items & offer.items:  # check if offer can be applied
                 self.items -= offer.items
                 self.items += Counter()  # clean up
                 self.items[offer.name] += 1
@@ -30,19 +30,7 @@ class Basket:
         return True
     
     def value() -> int:
-        total = 0
-        for item in self.items:
-            total += 
-
-"""
-        if counter['A'] == 3:
-            counter['A'] -= 3
-            counter['3A'] += 1
-        
-        if counter['B'] == 2:
-            counter['B'] -= 2
-            counter['2B'] += 1
-            """
+        return sum([self.sku_prices[sku] for sku in self.items])
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -67,6 +55,7 @@ def checkout(skus) -> int:
             return -1
 
     return basket.value()
+
 
 
 

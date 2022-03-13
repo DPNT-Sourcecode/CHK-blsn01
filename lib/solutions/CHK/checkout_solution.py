@@ -1,3 +1,4 @@
+import copy
 import math
 
 from collections import Counter
@@ -64,7 +65,7 @@ class OfferManager:
 
         for offer_perm in permutations(offers):
             print(f'testing perm {offer_perm}')
-            basket = Basket(basket_og.prices, basket_og.items)
+            basket = copy.deepcopy(basket_og)
 
             for offer in offer_perm:
                 if basket.contains(offer.base_items):  # check if offer can be applied
@@ -109,4 +110,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

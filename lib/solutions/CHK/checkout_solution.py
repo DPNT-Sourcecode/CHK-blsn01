@@ -66,10 +66,10 @@ class OfferManager:
                     basket.remove(offer.base_items)
                     basket.add(offer.name)
 
-            value = basket.value()
-            if value < best_value:
-                best_value = value
-                best_basket = basket
+                value = basket.value()
+                if value < best_value:
+                    best_value = value
+                    best_basket = basket
 
         return best_basket
 
@@ -104,5 +104,6 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 

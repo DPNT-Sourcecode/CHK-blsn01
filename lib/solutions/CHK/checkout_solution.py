@@ -139,16 +139,18 @@ def checkout(skus: str) -> int:
         Offer('3A@130', base_items=Counter({'A': 3})),
         Offer('5A@200', base_items=Counter({'A': 5})),
         Offer('2B@45', base_items=Counter({'B': 2})),
-        Offer('5H@45', base_items=Counter({'B': 2})),
-        Offer('10H@80', base_items=Counter({'B': 2})),
-        Offer('2K@150', base_items=Counter({'B': 2})),
-        Offer('5P@200', base_items=Counter({'B': 2})),
-        Offer('3Q@80', base_items=Counter({'B': 2})),
-        Offer('2V@90', base_items=Counter({'B': 2})),
-        Offer('3V@130', base_items=Counter({'B': 2})),
-
+        Offer('5H@45', base_items=Counter({'H': 5})),
+        Offer('10H@80', base_items=Counter({'H': 10})),
+        Offer('2K@150', base_items=Counter({'K': 2})),
+        Offer('5P@200', base_items=Counter({'P': 5})),
+        Offer('3Q@80', base_items=Counter({'Q': 3})),
+        Offer('2V@90', base_items=Counter({'V': 2})),
+        Offer('3V@130', base_items=Counter({'V': 3})),
         Offer('2E+1B', base_items=Counter({'E': 2}), free_items=Counter({'B': 1})),
         Offer('2F+1F', base_items=Counter({'F': 2}), free_items=Counter({'F': 1})),
+        Offer('3N+1M', base_items=Counter({'N': 3}), free_items=Counter({'M': 1})),
+        Offer('3R+1Q', base_items=Counter({'R': 3}), free_items=Counter({'Q': 1})),
+        Offer('3U+1U', base_items=Counter({'U': 3}), free_items=Counter({'U': 1})),
     ]
 
     basket = Basket(prices)
@@ -158,6 +160,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

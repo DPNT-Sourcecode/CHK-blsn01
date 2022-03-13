@@ -3,9 +3,10 @@ from typing import List, Dict
 
 
 class Offer:
-    def __init__(self, name: str, items: Counter):
+    def __init__(self, name: str, needed_items: Counter, free_items: Counter = None):
         self.name = name
-        self.items = items
+        self.needed_items = needed_items
+        self.free_items = free_items
 
 class Basket:
     def __init__(self, sku_prices: Dict[str, int], offers: List[Offer]):
@@ -22,8 +23,8 @@ class Basket:
 
         # Apply offers
         for offer in self.offers:
-            if (self.items & offer.items) == offer.items:  # check if offer can be applied
-                self.items -= offer.items
+            if (self.items & offer.needed_items) == offer.needed_items:  # check if offer can be applied
+                self.items -= offer.needed_items
                 self.items += Counter()  # clean up
                 self.items[offer.name] += 1
         
@@ -50,7 +51,7 @@ def checkout(skus: str) -> int:
         Offer('3A@130', Counter({'A': 3})),
         Offer('5A@200', Counter({'A': 5})),
         Offer('2B@45', Counter({'B': 2})),
-        Offer('2E+1B@45', Counter({'E': 2})),
+        Offer('2E+1B@45', Counter(needed_items={'E': 2}, free_items={'B': 1})),
     ]
 
     basket = Basket(sku_prices, offers)
@@ -60,6 +61,7 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 
 
 

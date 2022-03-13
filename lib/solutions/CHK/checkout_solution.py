@@ -67,7 +67,7 @@ class OfferManager:
                 offers_applicable.append(offer)
 
         for offer_comb in combinations_with_replacement(offers_applicable, len(offers_applicable)):
-            print(f'testing perm {offer_comb}')
+            print(f'testing comb {offer_comb}')
             basket = copy.deepcopy(basket_og)
 
             for offer in offer_comb:
@@ -113,3 +113,4 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+

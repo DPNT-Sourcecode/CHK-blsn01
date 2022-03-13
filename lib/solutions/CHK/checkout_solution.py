@@ -17,22 +17,14 @@ class Basket:
     def put(sku: str) -> bool:
         if sku not in self.skus:
             return False
-        self.counter += sku
+        self.counter[sku] += 1
         
         return True
     
     def value() -> int:
         pass
 
-# noinspection PyUnusedLocal
-# skus = unicode string
-def checkout(skus):
-
-    for sku in skus:
-
-        counter[sku] += 1
-
-        # check for 
+"""
         if counter['A'] == 3:
             counter['A'] -= 3
             counter['3A'] += 1
@@ -40,4 +32,17 @@ def checkout(skus):
         if counter['B'] == 2:
             counter['B'] -= 2
             counter['2B'] += 1
+            """
+
+# noinspection PyUnusedLocal
+# skus = unicode string
+def checkout(skus):
+
+    valid_skus = {'A', 'B', 'C', 'D', '3A@130'}
+    basket = Basket()
+
+    for sku in skus:
+
+
+
 

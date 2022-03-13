@@ -124,6 +124,16 @@ def checkout(skus: str) -> int:
         '2B@45'  : 45,
         '2E+1B@45' : 80,
         '2F+1F@20' : 20,
+        '5H@45' : 45,
+        '10H for 80': 80,
+        '2K for 150': 150,
+        '3N get one M free' : 120,
+        '5P for 200' : 200,
+        '3Q for 80' : 80,
+        '3R get one Q free' : 150,
+        '3U get one U free' : 120,
+        '2V for 90' : 90,
+        '3V for 130' : 130,
     }
     offers = [
         Offer('3A@130', base_items=Counter({'A': 3})),
@@ -140,4 +150,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

@@ -36,14 +36,15 @@ class Basket:
 # skus = unicode string
 def checkout(skus: str) -> int:
     sku_prices = {
-             'A' : 50,
-             'B' : 30,
-             'C' : 20,
-             'D' : 15,
-             'E' : 40,
+        'A' : 50,
+        'B' : 30,
+        'C' : 20,
+        'D' : 15,
+        'E' : 40,
         '3A@130' : 130,
         '5A@200' : 200,
         '2B@45'  : 45,
+        '2E+1B@45'
     }
     offers = [
         Offer('3A@130', Counter({ 'A' : 3 })),
@@ -58,5 +59,6 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 
 

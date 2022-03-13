@@ -6186,6 +6186,28 @@ contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'D': 1, 'E': 1, '
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1})
 after adding Counter({'A': 9, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1})
 contains Counter({'A': 5}) in Counter({'A': 9, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1}) is True
+after removing Counter({'A': 4, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1})
+after adding Counter({'A': 4, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1, '5A@200': 1})
+contains Counter({'A': 3}) in Counter({'A': 4, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1, '5A@200': 1}) is True
+after removing Counter({'B': 3, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1, '5A@200': 1})
+after adding Counter({'B': 3, 'C': 3, 'A': 1, 'D': 1, 'E': 1, '2E+1B@45': 1, '2B@45': 1, '5A@200': 1, '3A@130': 1})
+id = CHK_R2_001, req = checkout("ABCDECBAABCABBAAAEEAA"), resp = 710
+Stopping client
+Notify round "CHK_R2", event "deploy"
+--------------------------------------------
+
+[31mResult is: FAILED[m
+Some requests have failed (10/40). Here are some of them:
+ - {"method":"checkout","params":["AAAAAAAAAA"],"id":"CHK_R2_022"}, expected: 400, got: 430
+ - {"method":"checkout","params":["EEB"],"id":"CHK_R2_024"}, expected: 80, got: 110
+ - {"method":"checkout","params":["EEEB"],"id":"CHK_R2_025"}, expected: 120, got: 150
+[31mYou have received a penalty of: 10 min[m
+[34mThe round will restart now[m
+
+[33mLook at your failed trials and edit your code. When you've finished, deploy your code with "deploy"[m
+
+Challenge description saved to file: challenges/CHK_R2.txt.
+
 
 
 

@@ -10,7 +10,7 @@ class Offer:
         self.free_items = free_items
 
 class Basket:
-    def __init__(self, skus: str, sku_prices: Dict[str, int]):
+    def __init__(self, sku_prices: Dict[str, int]):
         self.items = Counter()
         self.sku_prices = sku_prices
 
@@ -40,15 +40,12 @@ class Basket:
         return sum([self.sku_prices[sku] * self.items[sku] for sku in self.items])
 
 class OfferManager:
-    def __init__(self, offers: List[Offer]):
-        self.offers = offers
-
-    def apply(self, basket: Basket) -> Basket:
+    def apply(basket: Basket, offers: List[Offer]) -> Basket:
         """
         Apply offers and return new basket.
         """
         best_value = math.inf
-        for offer_perm in permutations(self.offers):
+        for offer_perm in permutations(offers):
             for offer in offer_perm:
                 if (self.items & offer.base_items) == offer.base_items:  # check if offer can be applied
                     self.items -= offer.base_items
@@ -78,13 +75,13 @@ def checkout(skus: str) -> int:
     ]
 
     basket = Basket(sku_prices)
-
     if not basket.update(skus):
         return -1
 
-    basket = OfferManager.apply(offers)
+    basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

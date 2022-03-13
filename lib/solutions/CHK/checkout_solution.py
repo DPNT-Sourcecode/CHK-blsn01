@@ -69,7 +69,7 @@ class OfferManager:
         if not offers_applicable:
             return basket
 
-        offers_applicable.sort(key=lambda x: len(x.base_items), reverse=True)
+        offers_applicable.sort(key=lambda x: len(x.base_items & basket.items), reverse=True)
 
         for offer in offers_applicable:
             while basket.contains(offer.base_items):  # check if offer can be applied
@@ -158,4 +158,5 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 

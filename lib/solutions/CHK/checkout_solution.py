@@ -66,11 +66,11 @@ class OfferManager:
             if basket.contains(offer.base_items):
                 offers_applicable.append(offer)
 
-        for offer_perm in combinations_with_replacement(offers, 4):
-            print(f'testing perm {offer_perm}')
+        for offer_comb in combinations_with_replacement(offers_applicable, len(offers_applicable)):
+            print(f'testing perm {offer_comb}')
             basket = copy.deepcopy(basket_og)
 
-            for offer in offer_perm:
+            for offer in offer_comb:
                 if basket.contains(offer.base_items):  # check if offer can be applied
                     basket.remove(offer.base_items)
                     basket.add(offer.name)
@@ -113,6 +113,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

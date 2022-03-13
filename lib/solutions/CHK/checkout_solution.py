@@ -1,9 +1,15 @@
+from collections import Counter
 
 
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
-    print(skus)
-    return 0
+
+    final_price = 0
+
+    counter = Counter()
+
+    for sku in skus:
+
 
 

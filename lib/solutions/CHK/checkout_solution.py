@@ -40,11 +40,14 @@ def checkout(skus: str) -> int:
              'B' : 30,
              'C' : 20,
              'D' : 15,
+             'E' : 40,
         '3A@130' : 130,
+        '5A@200' : 200,
         '2B@45'  : 45,
     }
     offers = [
         Offer('3A@130', Counter({ 'A' : 3 })),
+        Offer('5A@200', Counter({ 'A' : 5 })),
         Offer('2B@45', Counter({ 'B' : 2 })),
     ]
 
@@ -55,4 +58,5 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 

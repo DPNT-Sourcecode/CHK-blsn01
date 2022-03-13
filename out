@@ -1411,6 +1411,36 @@ contains Counter({'B': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) 
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after removing Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1})
 after adding Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '2B@45': 1})
+contains Counter({'E': 2}) in Counter({'A': 9, 'B': 3, 'C': 3, 'E': 3, 'D': 1, '2B@45': 1}) is True
+after removing Counter({'A': 9, 'B': 3, 'C': 3, 'D': 1, 'E': 1, '2B@45': 1})
+after removing Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1})
+after adding Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1})
+contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'A': 9, 'C': 3, 'B': 2, 'D': 1, 'E': 1, '2B@45': 1, '2E+1B@45': 1}) is False
+testing comb (<solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>, <solutions.CHK.checkout_solution.Offer object at 0x7ff4a0edea30>)
+contains Counter({'E': 2}) in Counter({'A': 9, 'B': 5, 'C': 3, 'E': 3, 'D': 1}) is True
+after removing Counter({'A': 9, 'B': 5, 'C': 3, 'D': 1, 'E': 1})
+after removing Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1})
+after adding Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1})
+contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
+contains Counter({'E': 2}) in Counter({'A': 9, 'B': 4, 'C': 3, 'D': 1, 'E': 1, '2E+1B@45': 1}) is False
+id = CHK_R2_001, req = checkout("ABCDECBAABCABBAAAEEAA"), resp = 680
+Stopping client
+Notify round "CHK_R2", event "deploy"
+--------------------------------------------
+
+[31mResult is: FAILED[m
+Some requests have failed (2/40). Here are some of them:
+ - {"method":"checkout","params":["BBBB"],"id":"CHK_R2_037"}, expected: 90, got: 105
+ - {"method":"checkout","params":["ABCDECBAABCABBAAAEEAA"],"id":"CHK_R2_001"}, expected: 665, got: 680
+[31mYou have received a penalty of: 10 min[m
+[34mThe round will restart now[m
+
+[33mLook at your failed trials and edit your code. When you've finished, deploy your code with "deploy"[m
+
+Challenge description saved to file: challenges/CHK_R2.txt.
+
 
 
 

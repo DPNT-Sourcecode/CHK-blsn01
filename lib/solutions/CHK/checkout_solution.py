@@ -1,3 +1,5 @@
+import math
+
 from collections import Counter
 from itertools import permutations
 from typing import List, Dict
@@ -100,6 +102,7 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+
 
 
 

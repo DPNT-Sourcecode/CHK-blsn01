@@ -23,6 +23,7 @@ class Basket:
         if sku not in self.prices:
             return False
         self.items[sku] += 1
+        print(f'after adding {self.items}')
 
     def update(self, skus: str) -> bool:
         """
@@ -43,6 +44,7 @@ class Basket:
     def remove(self, items: Counter) -> None:
         self.items -= items
         self.items += Counter() # cleanup
+        print(f'after removing {self.items}')
     
     def value(self) -> int:
         """
@@ -61,6 +63,7 @@ class OfferManager:
         print(f'num permutations: {len(list(permutations(offers)))}')
 
         for offer_perm in permutations(offers):
+            print(f'testing perm {offer_perm}')
             basket = Basket(basket_og.prices, basket_og.items)
 
             for offer in offer_perm:
@@ -106,3 +109,4 @@ def checkout(skus: str) -> int:
     basket = OfferManager.apply(basket, offers)
 
     return basket.value()
+

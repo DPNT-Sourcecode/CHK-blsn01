@@ -33,6 +33,9 @@ class Basket:
     def value(self) -> int:
         return sum([self.sku_prices[sku] * self.items[sku] for sku in self.items])
 
+class OfferApplicator:
+
+
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus: str) -> int:
@@ -61,4 +64,5 @@ def checkout(skus: str) -> int:
             return -1
 
     return basket.value()
+
 

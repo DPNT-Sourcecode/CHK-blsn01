@@ -3,13 +3,13 @@ from typing import List, Callable, Set
 
 
 class Offer:
-    def __init__(self, name: str, offer_set: Counter):
+    def __init__(self, name: str, items: Counter):
         self.name = name
-        self.offer_set = offer_set
+        self.items = items
 
 class Basket:
     def __init__(self, sku_prices: Set[str], offers: List[Offer]):
-        self.counter = Counter()
+        self.items = Counter()
         self.sku_prices = sku_prices
         self.offers = offers
 
@@ -17,18 +17,22 @@ class Basket:
         if sku not in self.sku_prices:
             return False
 
-        self.counter[sku] += 1
+        # Add to basket
+        self.items[sku] += 1
 
-        # check offers
+        # Apply offers
         for offer in self.offers:
-            if self.counter & offer.offer_set
-                self.counter -= offer.offer_set
-                self.counter[]
+            if self.items & offer.items
+                self.items -= offer.items
+                self.items += Counter()  # clean up
+                self.items[offer.name] += 1
         
         return True
     
     def value() -> int:
-        pass
+        total = 0
+        for item in self.items:
+            total += 
 
 """
         if counter['A'] == 3:
@@ -63,6 +67,7 @@ def checkout(skus) -> int:
             return -1
 
     return basket.value()
+
 
 
 

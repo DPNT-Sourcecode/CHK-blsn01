@@ -14,13 +14,13 @@ class Offer:
         self.price = price
 
 class Basket:
-    def __init__(self, skus: Dict[str, int], offers: List[Callable]):
+    def __init__(self, valid_skus: Set[str], offers: List[Offer]):
         self.counter = Counter()
-        self.skus = skus
+        self.valid_skus = valid_skus
         self.offers = offers
 
     def put(sku: str) -> bool:
-        if sku not in self.skus:
+        if sku not in self.valid_skus:
             return False
         self.counter[sku] += 1
         
@@ -47,6 +47,7 @@ def checkout(skus):
     basket = Basket()
 
     for sku in skus:
+
 
 
 
